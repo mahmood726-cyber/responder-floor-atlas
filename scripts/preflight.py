@@ -25,7 +25,9 @@ def check_import(modname: str) -> tuple[bool, str]:
     try:
         __import__(modname)
         return True, f"{modname} imports cleanly"
-    except ImportError as e:
+    except ModuleNotFoundError as e:
+        return False, f"{modname} not installed: {e}"
+    except Exception as e:
         return False, f"{modname} import failed: {e}"
 
 
@@ -46,9 +48,11 @@ def check_metafor() -> tuple[bool, str]:
     try:
         out = subprocess.run(
             [rscript, "-e", 'if(!"metafor" %in% rownames(installed.packages())) quit(status=1)'],
-            capture_output=True, timeout=60,
+            capture_output=True, timeout=20,
         )
         return (out.returncode == 0, "metafor installed" if out.returncode == 0 else "metafor not installed")
+    except subprocess.TimeoutExpired:
+        return False, "metafor check timed out after 20s"
     except Exception as e:
         return False, f"metafor check failed: {e}"
 
@@ -74,7 +78,7 @@ def check_ia_save() -> tuple[bool, str]:
 
 
 def check_instruments_yml() -> tuple[bool, str]:
-    p = Path("configs/instruments.yml")
+    p = Path(__file__).resolve().parent.parent / "configs" / "instruments.yml"
     return (p.exists(), str(p) if p.exists() else "configs/instruments.yml absent (created in Task 3)")
 
 
