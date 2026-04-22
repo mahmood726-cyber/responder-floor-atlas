@@ -7,6 +7,8 @@ d ∈ {+1, -1} is instrument direction (higher-better vs lower-better).
 from __future__ import annotations
 
 import math
+
+import numpy as np
 from scipy.stats import norm
 
 _P_CLAMP_LOW = 1e-10
@@ -111,3 +113,42 @@ def log_rr_hat_se_delta(
         _arm_var_log_p(mean_t, sd_t, n_t, mid, direction) +
         _arm_var_log_p(mean_c, sd_c, n_c, mid, direction)
     )
+
+
+def log_rr_hat_se_mc(
+    mean_t: float, sd_t: float, n_t: int,
+    mean_c: float, sd_c: float, n_c: int,
+    mid: float, direction: int,
+    n_draws: int = 10_000,
+    rng: np.random.Generator | None = None,
+) -> float:
+    """Monte Carlo SE of log RR̂, sampling arm means and SDs from their sampling distributions.
+
+    mu_hat ~ Normal(mu, sigma^2/n); sigma_hat from chi^2 scaling: sigma^2 * chi^2_{n-1} / (n-1).
+    Uses norm.logcdf for numerical stability in the extreme tails so that
+    the MC SE remains finite even when individual arm draws underflow the
+    naive cdf.
+    """
+    _validate_direction(direction)
+    _validate_sd(sd_t)
+    _validate_sd(sd_c)
+    if n_t < 2 or n_c < 2:
+        raise ValueError("n per arm must be >= 2 for MC SE")
+    rng = rng or np.random.default_rng(seed=20260422)
+
+    def _arm_log_p_draws(mean: float, sd: float, n: int) -> np.ndarray:
+        mu = rng.normal(mean, sd / math.sqrt(n), size=n_draws)
+        chi2 = rng.chisquare(df=n - 1, size=n_draws)
+        sigma = sd * np.sqrt(chi2 / (n - 1))
+        z = (direction * mu - mid) / sigma
+        # norm.logcdf is stable in extreme tails where naive cdf underflows to 0.
+        return norm.logcdf(z)
+
+    log_p_t = _arm_log_p_draws(mean_t, sd_t, n_t)
+    log_p_c = _arm_log_p_draws(mean_c, sd_c, n_c)
+    log_rr = log_p_t - log_p_c
+    # Drop any non-finite draws (extreme tail events) defensively.
+    log_rr = log_rr[np.isfinite(log_rr)]
+    if len(log_rr) < n_draws // 2:
+        raise ValueError(f"too many non-finite MC draws ({n_draws - len(log_rr)}/{n_draws})")
+    return float(np.std(log_rr, ddof=1))

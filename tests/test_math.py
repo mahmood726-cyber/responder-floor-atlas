@@ -2,7 +2,7 @@ import math
 import numpy as np
 import pytest
 
-from responder_floor.math import p_hat_arm, log_rr_hat, log_rr_hat_se_delta, delta_hat_arm
+from responder_floor.math import p_hat_arm, log_rr_hat, log_rr_hat_se_delta, delta_hat_arm, log_rr_hat_se_mc
 
 
 def test_kccq_higher_better_sanity_case():
@@ -83,3 +83,47 @@ def test_delta_hat_arm_rejects_p_out_of_range():
         delta_hat_arm(mean=0, sd=1, p_obs=-0.1, direction=1)
     with pytest.raises(ValueError):
         delta_hat_arm(mean=0, sd=1, p_obs=1.5, direction=1)
+
+
+def test_delta_method_vs_mc_within_5e3():
+    """Delta-method SE agrees with MC SE to within 5e-3 at n=100.
+
+    The Var(sigma) = sigma^2/(2(n-1)) large-n approximation introduces a
+    systematic negative bias (~1.4% relative at n=100), so the delta method
+    underestimates MC SE by ~0.0015-0.0022 at this parameterisation.
+    Tolerance 5e-3 covers this bias plus MC sampling variance (sigma ~6e-4).
+    """
+    rng = np.random.default_rng(seed=20260422)
+    se_delta = log_rr_hat_se_delta(mean_t=10, sd_t=15, n_t=100, mean_c=3, sd_c=15, n_c=100, mid=5, direction=1)
+    se_mc = log_rr_hat_se_mc(
+        mean_t=10, sd_t=15, n_t=100, mean_c=3, sd_c=15, n_c=100,
+        mid=5, direction=1, n_draws=10_000, rng=rng,
+    )
+    assert abs(se_delta - se_mc) < 5e-3, (se_delta, se_mc)
+
+
+@pytest.mark.parametrize("n", [10, 30, 100])
+def test_delta_vs_mc_across_n_values(n):
+    """Delta method SE vs MC SE: quantifies Var(sigma) approximation bias at small n.
+
+    Var(sigma_hat) = sigma^2 / (2*(n-1)) is a large-n approximation.
+    At small n the chi-squared skewness makes delta-method SE systematically
+    underestimate MC SE:
+      n=10:  ~16% underestimate -> |delta - mc| ~ 0.065
+      n=30:  ~5%  underestimate -> |delta - mc| ~ 0.010
+      n=100: ~1.4% underestimate -> |delta - mc| ~ 0.002
+
+    Tolerances are empirically calibrated (50k-draw MC, 5 seeds) to document
+    the approximation quality rather than claim tighter agreement.
+    """
+    rng = np.random.default_rng(seed=20260422 + n)
+    # Tolerances include systematic bias + 3-sigma MC sampling variance headroom.
+    tol = {10: 0.08, 30: 0.015, 100: 5e-3}[n]
+    se_delta = log_rr_hat_se_delta(
+        mean_t=10, sd_t=15, n_t=n, mean_c=3, sd_c=15, n_c=n, mid=5, direction=1
+    )
+    se_mc = log_rr_hat_se_mc(
+        mean_t=10, sd_t=15, n_t=n, mean_c=3, sd_c=15, n_c=n,
+        mid=5, direction=1, n_draws=20_000, rng=rng,
+    )
+    assert abs(se_delta - se_mc) < tol, (n, se_delta, se_mc)
