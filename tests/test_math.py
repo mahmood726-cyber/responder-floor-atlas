@@ -2,7 +2,7 @@ import math
 import numpy as np
 import pytest
 
-from responder_floor.math import p_hat_arm, log_rr_hat, log_rr_hat_se_delta
+from responder_floor.math import p_hat_arm, log_rr_hat, log_rr_hat_se_delta, delta_hat_arm
 
 
 def test_kccq_higher_better_sanity_case():
@@ -48,3 +48,38 @@ def test_log_rr_hat_positive_when_treatment_better():
 def test_log_rr_hat_se_delta_positive_and_finite():
     se = log_rr_hat_se_delta(mean_t=10, sd_t=15, n_t=100, mean_c=3, sd_c=15, n_c=100, mid=5, direction=1)
     assert se > 0 and math.isfinite(se)
+
+
+def test_log_rr_hat_stable_in_extreme_tails():
+    # z well past scipy norm.cdf underflow threshold (~z=-38).
+    # Naive implementation returns 0.0 (both arms clamp to 1e-10, log cancels).
+    # Stable implementation returns a large negative value.
+    lrr = log_rr_hat(mean_t=-500, sd_t=10, n_t=100,
+                     mean_c=500, sd_c=10, n_c=100,
+                     mid=0, direction=1)
+    assert math.isfinite(lrr)
+    assert lrr < -100, f"expected strongly negative logRR, got {lrr}"
+
+
+def test_log_rr_hat_se_finite_in_extreme_tails():
+    se = log_rr_hat_se_delta(mean_t=-500, sd_t=10, n_t=100,
+                             mean_c=500, sd_c=10, n_c=100,
+                             mid=0, direction=1)
+    assert math.isfinite(se) and se > 0
+
+
+def test_direction_true_is_rejected():
+    with pytest.raises(ValueError):
+        p_hat_arm(mean=0, sd=1, mid=0, direction=True)
+
+
+def test_direction_false_is_rejected():
+    with pytest.raises(ValueError):
+        p_hat_arm(mean=0, sd=1, mid=0, direction=False)
+
+
+def test_delta_hat_arm_rejects_p_out_of_range():
+    with pytest.raises(ValueError):
+        delta_hat_arm(mean=0, sd=1, p_obs=-0.1, direction=1)
+    with pytest.raises(ValueError):
+        delta_hat_arm(mean=0, sd=1, p_obs=1.5, direction=1)
