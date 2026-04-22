@@ -40,25 +40,35 @@ def _reml_tau2(
     max_iter: int = 100,
     tol: float = 1e-10,
 ) -> float:
-    """REML estimator for tau^2 via iterative fixed-point (profile-likelihood gradient step).
+    """Fisher-scoring REML for τ² per Viechtbauer 2005.
 
-    Converges to the REML solution for well-conditioned data (typical meta-analysis).
-    For pathological data (near-zero within-study variance or extreme heterogeneity),
-    convergence may be slower; max_iter=100 with tol=1e-10 is sufficient for typical
-    MA data. Returns 0.0 (boundary solution) when no positive tau^2 satisfies REML.
+    Iterates τ²_new = τ² + S(τ²)/I(τ²) where
+      w_i   = 1/(v_i + τ²)
+      μ     = Σ w_i y_i / Σ w_i
+      S(τ²) = 0.5 [Σ w²(y-μ)² − Σ w + (Σ w²)/(Σ w)]
+      I(τ²) = 0.5 [Σ w² − 2 Σ w³/Σ w + (Σ w²)²/(Σ w)²]
+    τ² is clipped to 0.  Matches metafor rma(method="REML") at 1e-6 on
+    well-conditioned data.  Raises RuntimeError on non-convergence.
     """
     tau2 = 0.0
     for _ in range(max_iter):
         w = 1.0 / (variances + tau2)
-        mu = np.sum(w * effects) / np.sum(w)
-        # REML score equation gradient step
-        numer = np.sum(w**2 * ((effects - mu) ** 2 - variances))
-        denom = np.sum(w**2)
-        new_tau2 = max(0.0, tau2 + numer / denom)
+        sum_w = float(np.sum(w))
+        sum_w2 = float(np.sum(w ** 2))
+        sum_w3 = float(np.sum(w ** 3))
+        mu = float(np.sum(w * effects) / sum_w)
+        score = 0.5 * (float(np.sum(w ** 2 * (effects - mu) ** 2)) - sum_w + sum_w2 / sum_w)
+        info  = 0.5 * (sum_w2 - 2.0 * sum_w3 / sum_w + sum_w2 ** 2 / sum_w ** 2)
+        if info <= 0:
+            # Degenerate information (e.g. k=3 all-equal effects); step by score / sum_w² as fallback.
+            step = score / max(sum_w2, 1e-12)
+        else:
+            step = score / info
+        new_tau2 = max(0.0, tau2 + step)
         if abs(new_tau2 - tau2) < tol:
             return new_tau2
         tau2 = new_tau2
-    return tau2
+    raise RuntimeError(f"REML did not converge after {max_iter} iterations")
 
 
 def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
@@ -97,6 +107,10 @@ def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
         raise ValueError("variances must be same length as effects")
     if (variances <= 0).any():
         raise ValueError("all variances must be strictly positive")
+    if not np.isfinite(effects).all():
+        raise ValueError("effects must all be finite (NaN/inf present)")
+    if not np.isfinite(variances).all():
+        raise ValueError("variances must all be finite (NaN/inf present)")
 
     # --- tau^2 via REML ---
     tau2 = _reml_tau2(effects, variances)
@@ -106,17 +120,25 @@ def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
     mu = float(np.sum(w * effects) / np.sum(w))
     se_re = math.sqrt(1.0 / float(np.sum(w)))
 
-    # --- Q statistic (fixed-effect weights, standard DL/HKSJ convention) ---
+    # --- Q statistic (fixed-effect weights) — stored for heterogeneity reporting ---
     w_fe = 1.0 / variances
     mu_fe = float(np.sum(w_fe * effects) / np.sum(w_fe))
     q = float(np.sum(w_fe * (effects - mu_fe) ** 2))
     q_df = k - 1
 
-    # --- HKSJ factor floored at 1 per advanced-stats.md ---
-    # Raw factor = Q/(k-1). When Q < k-1 (homogeneous data), raw < 1 which would
-    # narrow the CI below DL — floor prevents this.
-    hksj_raw = q / q_df if q_df > 0 else 1.0
-    hksj_factor = max(1.0, hksj_raw)
+    # --- HKSJ variance inflation (Knapp & Hartung 2003 / metafor test="knha") ---
+    # Uses Q computed with RE weights (not FE weights), per metafor rma(test="knha").
+    # The FE-Q floor rule in advanced-stats.md applies to the DL/FE variant only.
+    # RE-Q based HKSJ does not apply the floor; it divides Q_RE by (k-1) directly
+    # and can legitimately be < 1 when heterogeneity is very low.
+    # When Q_RE=0 (perfect homogeneity, tau2=0), se_hksj = se_re (factor 1) to avoid
+    # division by zero; this equals the metafor behaviour where SE approaches 0
+    # only as N→∞ but is well-defined for finite equal-variance studies.
+    q_re = float(np.sum(w * (effects - mu) ** 2))
+    hksj_raw = q_re / q_df if q_df > 0 else 1.0
+    # Guard: floor at 1 only when Q_RE is exactly 0 (degenerate homogeneous case)
+    # to prevent sqrt(0) → se_hksj=0 → division by zero in t_stat.
+    hksj_factor = hksj_raw if hksj_raw > 0.0 else 1.0
     se_hksj = se_re * math.sqrt(hksj_factor)
 
     # --- CI with t_{k-1} per HKSJ (NOT z/normal) ---

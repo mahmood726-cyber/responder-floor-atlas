@@ -975,23 +975,38 @@ class PoolResult:
     q_stat: float
     q_df: int
     hksj_factor: float
-    z: float
+    t_stat: float
     p_value: float
 
 
 def _reml_tau2(effects: np.ndarray, variances: np.ndarray, max_iter: int = 100, tol: float = 1e-10) -> float:
-    """REML estimator for τ² via iterative Paule-Mandel-style fixed-point (REML formulation)."""
+    """Fisher-scoring REML for τ² per Viechtbauer 2005.
+
+    Iterates τ²_new = τ² + S(τ²)/I(τ²) where
+      w_i   = 1/(v_i + τ²)
+      μ     = Σ w_i y_i / Σ w_i
+      S(τ²) = 0.5 [Σ w²(y-μ)² − Σ w + (Σ w²)/(Σ w)]
+      I(τ²) = 0.5 [Σ w² − 2 Σ w³/Σ w + (Σ w²)²/(Σ w)²]
+    τ² is clipped to 0.  Raises RuntimeError on non-convergence.
+    """
     tau2 = 0.0
     for _ in range(max_iter):
         w = 1.0 / (variances + tau2)
-        mu = np.sum(w * effects) / np.sum(w)
-        numer = np.sum(w ** 2 * ((effects - mu) ** 2 - variances))
-        denom = np.sum(w ** 2)
-        new_tau2 = max(0.0, tau2 + numer / denom)
+        sum_w = float(np.sum(w))
+        sum_w2 = float(np.sum(w ** 2))
+        sum_w3 = float(np.sum(w ** 3))
+        mu = float(np.sum(w * effects) / sum_w)
+        score = 0.5 * (float(np.sum(w ** 2 * (effects - mu) ** 2)) - sum_w + sum_w2 / sum_w)
+        info  = 0.5 * (sum_w2 - 2.0 * sum_w3 / sum_w + sum_w2 ** 2 / sum_w ** 2)
+        if info <= 0:
+            step = score / max(sum_w2, 1e-12)
+        else:
+            step = score / info
+        new_tau2 = max(0.0, tau2 + step)
         if abs(new_tau2 - tau2) < tol:
             return new_tau2
         tau2 = new_tau2
-    return tau2
+    raise RuntimeError(f"REML did not converge after {max_iter} iterations")
 
 
 def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
@@ -1032,8 +1047,8 @@ def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
     pi_lower = mu - t_crit_pi * pi_se
     pi_upper = mu + t_crit_pi * pi_se
 
-    z = mu / se_hksj
-    p_value = 2.0 * (1.0 - norm.cdf(abs(z)))
+    t_stat = mu / se_hksj
+    p_value = float(2.0 * t.sf(abs(t_stat), df=k - 1))
 
     return PoolResult(
         k=k, estimate=float(mu), se=float(se_hksj),
@@ -1041,7 +1056,7 @@ def pool_reml_hksj_pi(effects: np.ndarray, variances: np.ndarray) -> PoolResult:
         pi_lower=float(pi_lower), pi_upper=float(pi_upper), pi_df=pi_df,
         tau2=float(tau2), q_stat=q, q_df=q_df,
         hksj_factor=float(hksj_factor),
-        z=float(z), p_value=float(p_value),
+        t_stat=float(t_stat), p_value=p_value,
     )
 ```
 
