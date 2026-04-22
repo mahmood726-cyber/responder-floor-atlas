@@ -127,3 +127,22 @@ def test_delta_vs_mc_across_n_values(n):
         mid=5, direction=1, n_draws=20_000, rng=rng,
     )
     assert abs(se_delta - se_mc) < tol, (n, se_delta, se_mc)
+
+
+def test_model2_round_trips_kccq():
+    # Forward: p̂ = Φ(5/15) ≈ 0.6306. Back-out should recover δ=5.
+    p = p_hat_arm(mean=10.0, sd=15.0, mid=5.0, direction=1)
+    delta_back = delta_hat_arm(mean=10.0, sd=15.0, p_obs=p, direction=1)
+    assert abs(delta_back - 5.0) < 1e-8
+
+
+def test_model2_round_trips_sgrq():
+    p = p_hat_arm(mean=-6.0, sd=10.0, mid=4.0, direction=-1)
+    delta_back = delta_hat_arm(mean=-6.0, sd=10.0, p_obs=p, direction=-1)
+    assert abs(delta_back - 4.0) < 1e-8
+
+
+def test_model2_boundary_p_does_not_raise():
+    # p=0 clamps to 1e-10; should produce large |δ̂| but not Inf.
+    delta_back = delta_hat_arm(mean=0.0, sd=1.0, p_obs=0.0, direction=1)
+    assert math.isfinite(delta_back) and delta_back > 5.0
