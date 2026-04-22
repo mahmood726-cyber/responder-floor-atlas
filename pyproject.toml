@@ -14,13 +14,13 @@ dependencies = [
     "pandas>=2.1",
     "pyarrow>=14.0",
     "pyreadr>=0.5",
-    "rpy2>=3.5",
     "pyyaml>=6.0",
     "jinja2>=3.1",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "pytest-cov>=4.1", "hypothesis>=6.100", "ruff>=0.5"]
+r_bridge = ["rpy2>=3.5"]
 
 [tool.setuptools.packages.find]
 include = ["responder_floor*"]
