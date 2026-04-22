@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Pipeline outputs (not committed until release tag)
+outputs/
+dashboard/build/
+universal_cache/
+
+# Local state
+PROGRESS.md
+sentinel-findings.md
+sentinel-findings.jsonl
+STUCK_FAILURES.md
+STUCK_FAILURES.jsonl
+.claude/
+
+# OS noise
+.DS_Store
+Thumbs.db
+*~
