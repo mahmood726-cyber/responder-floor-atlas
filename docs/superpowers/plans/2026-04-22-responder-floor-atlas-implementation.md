@@ -317,7 +317,7 @@ instruments:
     scale_max: 100
     canonical_mid: 5
     mid_source: "Spertus 2005 (J Am Coll Cardiol)"
-    label_regex: "(?i)(kccq|kansas.*city.*cardiomyopathy).*(overall|summary|total)"
+    label_regex: "(?i)(?=.*(overall|oss))(?!.*clinical).*(kccq|kansas.*city.*cardiomyopathy)"
   - id: sgrq_total
     display_name: "SGRQ Total"
     direction: -1
@@ -325,7 +325,7 @@ instruments:
     scale_max: 100
     canonical_mid: 4
     mid_source: "Jones 2005 (Thorax)"
-    label_regex: "(?i)(sgrq|st.*george).*(total|overall)?"
+    label_regex: "(?i)(sgrq|st.*george).*(total|overall)"
   - id: eq5d_5l_index
     display_name: "EQ-5D-5L index"
     direction: 1
@@ -333,7 +333,7 @@ instruments:
     scale_max: 1
     canonical_mid: 0.07
     mid_source: "Pickard 2019 (Value Health)"
-    label_regex: "(?i)eq.?5d(.?5l)?.*(index|utility|score)?"
+    label_regex: "(?i)eq.?5d.?5l"
   - id: promis_global_10
     display_name: "PROMIS Global-10"
     direction: 1

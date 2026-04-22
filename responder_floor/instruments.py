@@ -23,14 +23,21 @@ class Instrument:
 DEFAULT_PATH = Path(__file__).resolve().parent.parent / "configs" / "instruments.yml"
 
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=4)
 def load_instruments(path: Path | None = None) -> tuple[Instrument, ...]:
-    p = path or DEFAULT_PATH
+    p = (path or DEFAULT_PATH).resolve()
     raw = yaml.safe_load(p.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict) or "instruments" not in raw:
+        raise ValueError(f"{p}: expected top-level 'instruments:' key")
     instruments = []
     for entry in raw["instruments"]:
         if entry["direction"] not in (1, -1):
             raise ValueError(f"Instrument {entry['id']}: direction must be +1 or -1, got {entry['direction']}")
+        if not (entry["scale_min"] < entry["scale_max"]):
+            raise ValueError(f"{entry['id']}: scale_min must be < scale_max")
+        scale_range = entry["scale_max"] - entry["scale_min"]
+        if not (0 < entry["canonical_mid"] <= scale_range):
+            raise ValueError(f"{entry['id']}: canonical_mid {entry['canonical_mid']} outside (0, {scale_range}]")
         instruments.append(Instrument(**entry))
     return tuple(instruments)
 
