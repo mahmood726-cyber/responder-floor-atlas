@@ -1,0 +1,25 @@
+paths:
+  pairwise70: "C:/Projects/Pairwise70"
+  output_dir: "outputs"
+  dashboard_dir: "dashboard"
+
+seed:
+  xoshiro128_state: [0x12345678, 0x9ABCDEF0, 0x0FEDCBA9, 0x87654321]
+
+tolerance:
+  r_parity_pooling: 1.0e-6
+  r_parity_reconstruction: 1.0e-3
+  mc_draws: 10000
+
+gates:
+  A_arm_level_reviews_min: 30
+  A_trials_per_review_min: 3
+  B_instruments_min: 3
+  B_reviews_per_instrument_min: 5
+  C_mid_availability_pct_min: 0.20
+  D_cross_review_trial_overlap_min: 50
+
+thresholds:
+  alpha: 0.05
+  magnitude_flip_log_rr: 0.1
+  reconstruction_epsilon: 0.05
