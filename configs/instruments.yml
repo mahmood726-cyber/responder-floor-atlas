@@ -1,0 +1,52 @@
+# configs/instruments.yml
+# v1 instrument panel frozen per spec §4.3. Direction: +1 higher-better, -1 lower-better.
+# Canonical MIDs are published community-accepted values; review-stated MIDs override these when available.
+instruments:
+  - id: kccq_os
+    display_name: "KCCQ Overall Summary"
+    direction: 1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 5
+    mid_source: "Spertus 2005 (J Am Coll Cardiol)"
+    label_regex: "(?i)(kccq|kansas.*city.*cardiomyopathy).*(overall|summary|total)"
+  - id: sgrq_total
+    display_name: "SGRQ Total"
+    direction: -1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 4
+    mid_source: "Jones 2005 (Thorax)"
+    label_regex: "(?i)(sgrq|st.*george).*(total|overall)?"
+  - id: eq5d_5l_index
+    display_name: "EQ-5D-5L index"
+    direction: 1
+    scale_min: 0
+    scale_max: 1
+    canonical_mid: 0.07
+    mid_source: "Pickard 2019 (Value Health)"
+    label_regex: "(?i)eq.?5d(.?5l)?.*(index|utility|score)?"
+  - id: promis_global_10
+    display_name: "PROMIS Global-10"
+    direction: 1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 2
+    mid_source: "Hays 2018 (Qual Life Res)"
+    label_regex: "(?i)promis.*global.?10"
+  - id: odi
+    display_name: "Oswestry Disability Index"
+    direction: -1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 10
+    mid_source: "Copay 2008 (Spine J)"
+    label_regex: "(?i)(odi|oswestry)"
+  - id: phq9
+    display_name: "PHQ-9"
+    direction: -1
+    scale_min: 0
+    scale_max: 27
+    canonical_mid: 5
+    mid_source: "Kroenke 2001 (J Gen Intern Med)"
+    label_regex: "(?i)phq.?9"
