@@ -41,7 +41,7 @@ instruments:
     scale_max: 100
     canonical_mid: 10
     mid_source: "Copay 2008 (Spine J)"
-    label_regex: "(?i)(odi|oswestry)"
+    label_regex: "(?i)(\\b(odi)\\b|oswestry)"
   - id: phq9
     display_name: "PHQ-9"
     direction: -1
@@ -50,3 +50,51 @@ instruments:
     canonical_mid: 5
     mid_source: "Kroenke 2001 (J Gen Intern Med)"
     label_regex: "(?i)phq.?9"
+  - id: body_weight_kg
+    display_name: "Body weight (kg change)"
+    direction: -1
+    scale_min: -50
+    scale_max: 50
+    canonical_mid: 5
+    mid_source: "Jensen 2014 (AHA/ACC obesity guideline); 5kg clinically meaningful"
+    label_regex: "(?i)weight.*\\bkg\\b(?![\\s]*/)|change.*in\\s*kg\\b(?!\\s*/)"
+  - id: body_weight_pct
+    display_name: "Body weight (% change)"
+    direction: -1
+    scale_min: -50
+    scale_max: 50
+    canonical_mid: 5
+    mid_source: "NIH/NHLBI clinical significance threshold (5% weight loss)"
+    label_regex: "(?i)((%|percent|pct).*weight|weight.*(%|percent|pct))"
+  - id: bmi_change
+    display_name: "BMI change (kg/m\xb2)"
+    direction: -1
+    scale_min: -20
+    scale_max: 20
+    canonical_mid: 1.0
+    mid_source: "Cochrane obesity review convention"
+    label_regex: "(?i)\\A(?:(?!—).)*\\bbmi\\b|\\A(?:(?!—).)*body.?mass.?index"
+  - id: sf36_pcs
+    display_name: "SF-36 Physical Component Summary"
+    direction: 1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 2.0
+    mid_source: "Ware 2001 SF-36 Manual"
+    label_regex: "(?i)sf.?36.*physical.*component"
+  - id: sf36_mcs
+    display_name: "SF-36 Mental Component Summary"
+    direction: 1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 3.0
+    mid_source: "Ware 2001 SF-36 Manual"
+    label_regex: "(?i)sf.?36.*mental.*component"
+  - id: sf36_physical_function
+    display_name: "SF-36 Physical Functioning"
+    direction: 1
+    scale_min: 0
+    scale_max: 100
+    canonical_mid: 5.0
+    mid_source: "Wyrwich 2005 (J Clin Epidemiol)"
+    label_regex: "(?i)sf.?36.*physical.*functioning"
