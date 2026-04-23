@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import shutil
 import subprocess
 import sys
@@ -57,11 +56,6 @@ def check_metafor() -> tuple[bool, str]:
         return False, f"metafor check failed: {e}"
 
 
-def check_zenodo_token() -> tuple[bool, str]:
-    token = os.environ.get("ZENODO_API_TOKEN")
-    return (bool(token), "ZENODO_API_TOKEN set" if token else "ZENODO_API_TOKEN env var not set")
-
-
 def check_ots_binary() -> tuple[bool, str]:
     found = shutil.which("ots")
     return (bool(found), found or "ots (OpenTimestamps) binary not on PATH")
@@ -93,7 +87,6 @@ def main() -> int:
         "rpy2_import": check_import("rpy2"),
         "r_binary": check_r_binary(),
         "metafor_package": check_metafor(),
-        "zenodo_token": check_zenodo_token(),
         "ots_binary": check_ots_binary(),
         "ia_save_api": check_ia_save(),
         "instruments_yml": check_instruments_yml(),

@@ -4,7 +4,7 @@
 **Author:** Mahmood Ahmad
 **Date:** 2026-04-22
 **Status:** DRAFT v1.0 — awaiting user approval before implementation plan
-**Spec locked by:** Zenodo DOI + OpenTimestamps + Internet Archive (prior to any real-data compute)
+**Spec locked by:** git tag + OpenTimestamps + Internet Archive (prior to any real-data compute). DOI from Synthēsis via Crossref at publication.
 **Sibling atlases:** `repro-floor-atlas` (v0.1.0, 2026-04-16), `cochrane-modern-re` (v0.1.0, 2026-04-21), `pi-atlas` (spec v1.0, 2026-04-21)
 
 ---
@@ -217,7 +217,7 @@ Gates evaluated after Stage 1 `scan_dual_framing.py`, results committed to `FEAS
 
 If any gate fails, execute in order:
 1. Commit `FEASIBILITY_REPORT.md` with exact counts and gate verdicts.
-2. Draft prereg amendment enumerating scope change (timestamped, Zenodo-updated, OTS-restamped).
+2. Draft prereg amendment enumerating scope change (timestamped, new git tag, OTS-restamped, re-IA-archived).
 3. Resume pipeline under amended scope with explicit "pivot" section in manuscript.
 4. Do NOT silently narrow. Every scope change is logged and disclosed.
 
@@ -260,7 +260,7 @@ Stage 5  build_dashboard.py       → dashboard/index.html
 - `responder_floor/rda_loader.py` — pyreadr primary, rpy2 fallback for nested S4.
 - `responder_floor/r_validation.R` — metafor + custom reconstruction.R parity tests.
 - `responder_floor/sentinel_config.yml` — pre-push rule set.
-- `scripts/preregister.py` — Zenodo + OpenTimestamps + archive.org stamping (reused from PI Atlas).
+- `scripts/preregister.py` — OpenTimestamps + archive.org stamping (dry-run and live modes). DOI from Synthēsis/Crossref at publication.
 
 ### 7.3 Configuration
 
@@ -281,7 +281,7 @@ No hardcoded local paths, no BOM, no unicode mojibake. `configs/instruments.yml`
 
 ## 8. Preregistration commitments
 
-Locked to Zenodo + OpenTimestamps + Internet Archive before Stage 1 first real-data run. Committed to git at `v0.0.1` tag.
+Locked to git tag + OpenTimestamps + Internet Archive before Stage 1 first real-data run. Committed to git at `v0.0.1` tag. DOI from Synthēsis via Crossref at publication.
 
 **Frozen items:**
 - Q1/Q2/Q3/Q4 definitions + metrics table (§3).
@@ -358,11 +358,11 @@ Silent-failure sentinels (return None / empty DataFrame) BANNED; schema mismatch
 
 | Tag | Contents | Gate |
 |---|---|---|
-| `v0.0.1` | Spec + prereg committed, instrument panel v1 frozen, no real-data compute yet | Zenodo + OTS + IA stamping before progression |
+| `v0.0.1` | Spec + prereg committed, instrument panel v1 frozen, no real-data compute yet | git tag + OTS + IA stamping before progression |
 | `v0.1.0-feasibility` | Stage 1 output, `FEASIBILITY_REPORT.md` public, gate verdicts, prereg amendment (if any) | Gate A/B/C/D resolved |
 | `v0.1.0` | Full pipeline run, E156 Methods Note drafted, Pages dashboard live, `analysis_audit.md` published | All tests pass, R parity clean, Sentinel 0 BLOCK, Overmind PASS |
 | `v0.2.0` | Post-internal-review edits, full paper draft for RSM | Co-author sign-off |
-| `v1.0.0` | Post peer-review edits, Zenodo DOI minted | Journal acceptance |
+| `v1.0.0` | Post peer-review edits, DOI from Synthēsis via Crossref at publication | Journal acceptance |
 
 ### 10.2 Artefacts
 
@@ -370,7 +370,7 @@ Silent-failure sentinels (return None / empty DataFrame) BANNED; schema mismatch
 - Data: `outputs/*.parquet` + `outputs/analysis_audit.md`.
 - Dashboard: `dashboard/index.html` (Pages, under `mahmood726-cyber.github.io/responder-floor-atlas/`).
 - Paper: `manuscript/e156_methods_note.md` (Synthēsis) + `manuscript/full_paper.md` (RSM).
-- Preregistration: `preregistration/PREREGISTRATION.md` + Zenodo DOI + OTS receipt + archive.org URL.
+- Preregistration: `preregistration/PREREGISTRATION.md` + OTS receipt + archive.org URL. Publication DOI from Synthēsis via Crossref.
 - Signed release bundle: HMAC via `TRUTHCERT_HMAC_KEY` per `lessons.md` crypto rule; no placeholder signatures.
 
 ### 10.3 Authorship
@@ -387,7 +387,7 @@ Middle-author-only for Mahmood Ahmad on both papers per `feedback_e156_authorshi
 | R2 | Outcome-label fuzzy match creates false dual-framing pairs | Med | Med | Top-20-per-instrument hand-review; precision/recall reported; `instruments.yml` regex tightened | Negative control test + spot audit |
 | R3 | Normality badly violated for skewed PROs | High | Med | Sensitivity under log-Normal + Beta + truncated Normal; bound reported explicitly in paper | Sensitivity table |
 | R4 | R ↔ Python parity fails at 1e-6 | Low | Low | Document tolerance; ship at 1e-5 with audit note; investigate root cause | R parity CI |
-| R5 | Prereg locked but feasibility forces scope narrowing | Med | Med | Amendment protocol (§6.4): timestamped, Zenodo-updated, explicit "pivot" section in paper | Stage 1 gate result |
+| R5 | Prereg locked but feasibility forces scope narrowing | Med | Med | Amendment protocol (§6.4): timestamped, OTS-restamped, re-IA-archived, explicit "pivot" section in paper | Stage 1 gate result |
 | R6 | Same-trial multiplicity inflates CI confidence | Med | Med | Clustered bootstrap (cluster = review-outcome pair); reported alongside naive CI | Built into Stage 4 |
 | R7 | Instrument panel v1 too narrow, misses coverage | Med | Low | v1 frozen; panel expansion is v2 paper | Post-feasibility count per instrument |
 | R8 | Direction-of-benefit misconfigured (silent sign flip per instrument) | Low | High | Contract test: each instrument in yml has a happy-path trial with hand-checked expected RR sign | Negative control |
@@ -428,7 +428,7 @@ Per `rules.md` "Ingredient proof and claim discipline":
 
 | Week | Milestone |
 |---|---|
-| 1, Day 1 | Repo scaffold + `PREREGISTRATION.md` + Zenodo + OTS + IA stamp → `v0.0.1` |
+| 1, Day 1 | Repo scaffold + `PREREGISTRATION.md` + git tag + OTS + IA stamp → `v0.0.1` |
 | 1, Day 2 | `scan_dual_framing.py` + FEASIBILITY_REPORT → `v0.1.0-feasibility` |
 | 1, Day 3 | Gate resolution + prereg amendment (if needed) |
 | 1, Days 4–5 | `infer_mid.py` + `reconstruct.py` + tests |
@@ -448,7 +448,7 @@ Per `lessons.md` "preflight external prereqs before starting a multi-task plan",
 - [ ] `C:\Projects\Pairwise70\` exists and contains ≥500 RDA files.
 - [ ] `pyreadr` imports cleanly; one test RDA loads.
 - [ ] R 4.5.2 at `C:\Program Files\R\R-4.5.2\bin\Rscript.exe` with `metafor` available.
-- [ ] Zenodo API token + OTS binary + archive.org save API all functional (reuse from PI Atlas).
+- [ ] OTS binary + archive.org save API functional (reuse from PI Atlas). DOI from Synthēsis/Crossref at publication — no Zenodo token required.
 - [ ] `configs/instruments.yml` v1 panel parses and resolves every entry.
 - [ ] Sentinel hook installable in this repo.
 - [ ] Overmind nightly can enrol this repo.
@@ -477,7 +477,7 @@ All design decisions resolved. Spec is implementation-ready pending user review.
 
 ## Appendix B — Cross-references within portfolio
 
-- Infrastructure reuse: Sentinel pre-push rules, Overmind verification, Pages deploy, Zenodo+OTS+IA stamper (from PI Atlas), xoshiro128** seeded MC (from `ma-workbench/precision-sweep`).
+- Infrastructure reuse: Sentinel pre-push rules, Overmind verification, Pages deploy, OTS+IA stamper (from PI Atlas; Zenodo dropped per Synthēsis/Crossref DOI policy), xoshiro128** seeded MC (from `ma-workbench/precision-sweep`).
 - Methodology reuse: Q/(k−1) HKSJ floor, metafor 1e-6 parity, REML + PI from `cochrane-modern-re`.
 - Corpus: Pairwise70 (shared with three sibling atlases).
 - Authorship policy: middle-author-only per `feedback_e156_authorship.md`.

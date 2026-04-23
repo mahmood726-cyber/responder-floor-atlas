@@ -12,7 +12,7 @@ def test_preflight_reports_status_dict():
     status = json.loads(result.stdout)
     required_keys = {
         "pairwise70_path", "pyreadr_import", "rpy2_import",
-        "r_binary", "metafor_package", "zenodo_token",
+        "r_binary", "metafor_package",
         "ots_binary", "ia_save_api", "instruments_yml",
     }
     assert required_keys <= set(status.keys())

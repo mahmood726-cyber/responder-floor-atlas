@@ -4,9 +4,9 @@
 
 **Goal:** Build the Responder Floor Atlas — a Pairwise70-scale audit of continuous-vs-responder framing reproducibility in Cochrane PRO meta-analyses, producing Q1 framing flip-rate (primary), Q2 reconstruction fidelity, and Q3 implied-MID heterogeneity results plus E156 Methods Note + RSM full-paper drafts.
 
-**Architecture:** Five-stage CLI pipeline (scan → MID infer → reconstruct → pool+flip → dashboard) built on Pairwise70 RDA files. TDD-first. Python 3.12 + R 4.5.2 parity at 1e-6 for pooling, 1e-3 for Monte Carlo. Single-file Pages dashboard. Preregistration via Zenodo+OTS+IA before any real-data compute. Fail-closed at every fallback point; no silent exclusions.
+**Architecture:** Five-stage CLI pipeline (scan → MID infer → reconstruct → pool+flip → dashboard) built on Pairwise70 RDA files. TDD-first. Python 3.12 + R 4.5.2 parity at 1e-6 for pooling, 1e-3 for Monte Carlo. Single-file Pages dashboard. Preregistration via git tag + OTS + IA before any real-data compute (Zenodo dropped; DOI from Synthēsis via Crossref at publication). Fail-closed at every fallback point; no silent exclusions.
 
-**Tech Stack:** Python 3.12, pyreadr + rpy2, numpy, scipy, pandas, pyarrow, pytest, hypothesis, R 4.5.2 + metafor, xoshiro128 seeded MC, Sentinel pre-push hook, Zenodo/OTS/Internet Archive for preregistration.
+**Tech Stack:** Python 3.12, pyreadr + rpy2, numpy, scipy, pandas, pyarrow, pytest, hypothesis, R 4.5.2 + metafor, xoshiro128 seeded MC, Sentinel pre-push hook, OpenTimestamps + Internet Archive for preregistration (no Zenodo; DOI from Synthēsis/Crossref at publication).
 
 **Spec:** `docs/superpowers/specs/2026-04-22-responder-floor-atlas-design.md` (commit `ee81682`).
 
@@ -38,7 +38,7 @@ def test_preflight_reports_status_dict():
     status = json.loads(result.stdout)
     required_keys = {
         "pairwise70_path", "pyreadr_import", "rpy2_import",
-        "r_binary", "metafor_package", "zenodo_token",
+        "r_binary", "metafor_package",
         "ots_binary", "ia_save_api", "instruments_yml",
     }
     assert required_keys <= set(status.keys())
@@ -108,11 +108,6 @@ def check_metafor() -> tuple[bool, str]:
         return False, f"metafor check failed: {e}"
 
 
-def check_zenodo_token() -> tuple[bool, str]:
-    token = os.environ.get("ZENODO_API_TOKEN")
-    return (bool(token), "ZENODO_API_TOKEN set" if token else "ZENODO_API_TOKEN env var not set")
-
-
 def check_ots_binary() -> tuple[bool, str]:
     found = shutil.which("ots")
     return (bool(found), found or "ots (OpenTimestamps) binary not on PATH")
@@ -144,7 +139,6 @@ def main() -> int:
         "rpy2_import": check_import("rpy2"),
         "r_binary": check_r_binary(),
         "metafor_package": check_metafor(),
-        "zenodo_token": check_zenodo_token(),
         "ots_binary": check_ots_binary(),
         "ia_save_api": check_ia_save(),
         "instruments_yml": check_instruments_yml(),
@@ -2820,7 +2814,7 @@ git commit -m "Task 21: negative control (analytically-generated KCCQ cluster mu
 
 ---
 
-## Task 22: PREREGISTRATION.md + Zenodo/OTS/IA stamping
+## Task 22: PREREGISTRATION.md + OTS/IA stamping (Zenodo dropped per Synthēsis/Crossref DOI policy)
 
 **Files:**
 - Create: `preregistration/PREREGISTRATION.md`, `scripts/preregister.py`, `tests/test_preregister.py`
@@ -2833,7 +2827,7 @@ git commit -m "Task 21: negative control (analytically-generated KCCQ cluster mu
 
 **Spec reference:** `docs/superpowers/specs/2026-04-22-responder-floor-atlas-design.md` (commit `ee81682`)
 **Corpus:** Pairwise70 (unchanged from sibling atlases)
-**Stamped:** Zenodo DOI + OpenTimestamps + archive.org
+**Stamped:** git tag + OpenTimestamps + archive.org. DOI from Synthēsis via Crossref at publication (not Zenodo).
 
 ## Research questions (locked)
 
@@ -2865,7 +2859,7 @@ git commit -m "Task 21: negative control (analytically-generated KCCQ cluster mu
 
 ## Pivot protocol
 
-Any gate failure triggers a timestamped, Zenodo-updated, OTS-restamped amendment with explicit paper disclosure. No silent narrowing.
+Any gate failure triggers a timestamped amendment (new git tag, OTS-restamped, re-IA-archived) with explicit paper disclosure. No silent narrowing.
 
 ## Authorship
 
@@ -2875,9 +2869,9 @@ Middle-author-only for Mahmood Ahmad per `feedback_e156_authorship.md`.
 
 - Spec commit: ee81682
 - Preregistration commit: [TO FILL AT STAMP TIME]
-- Zenodo DOI: [FILLED BY scripts/preregister.py]
 - OTS receipt: preregistration/PREREGISTRATION.md.ots
-- Internet Archive URL: [FILLED BY scripts/preregister.py]
+- Internet Archive URL: [FILLED BY scripts/preregister.py at live-stamp time]
+- Publication DOI (Crossref via Synthēsis): [FILLED AT PUBLICATION]
 ```
 
 - [ ] **Step 2: Write failing test**
@@ -2901,25 +2895,26 @@ def test_preregister_script_dry_run_produces_report(tmp_path):
     assert result.returncode == 0, result.stderr
     import json
     report = json.loads((tmp_path / "stamp_report.json").read_text())
-    assert "zenodo" in report and "ots" in report and "archive_org" in report
+    assert "ots" in report and "archive_org" in report
     assert report["dry_run"] is True
+    assert "zenodo" not in report  # explicit — Zenodo removed
 ```
 
 - [ ] **Step 3: Implement preregister.py**
 
 ```python
 # scripts/preregister.py
-"""Stamp preregistration to Zenodo + OpenTimestamps + Internet Archive before real-data compute.
+"""Stamp preregistration to OpenTimestamps + Internet Archive before real-data compute.
 
+DOI comes from Synthēsis via Crossref at publication time — Zenodo is not used.
 Dry-run mode emits a stamp report without actually publishing — used in CI.
-Live mode requires ZENODO_API_TOKEN env var and `ots` CLI on PATH.
+Live mode requires the `ots` CLI on PATH and network access to archive.org.
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
@@ -2936,20 +2931,13 @@ def _stamp_ots(path: Path, dry_run: bool) -> dict:
     return {"receipt": str(path) + ".ots", "dry_run": False}
 
 
-def _stamp_zenodo(path: Path, dry_run: bool) -> dict:
-    if dry_run:
-        return {"doi": "10.5281/zenodo.DRYRUN", "dry_run": True}
-    token = os.environ.get("ZENODO_API_TOKEN")
-    if not token:
-        raise RuntimeError("ZENODO_API_TOKEN not set for live stamping")
-    # Live Zenodo upload via API — implementation deferred to first live run.
-    raise NotImplementedError("Live Zenodo publish implemented at live-stamp time")
-
-
 def _stamp_ia(path: Path, dry_run: bool) -> dict:
     if dry_run:
         return {"url": "https://web.archive.org/save/DRYRUN", "dry_run": True}
-    raise NotImplementedError("Live archive.org save implemented at live-stamp time")
+    raise NotImplementedError(
+        "Live archive.org save implemented at live-stamp time; requires "
+        "GitHub-rendered URL, not local path."
+    )
 
 
 def main() -> int:
@@ -2967,10 +2955,11 @@ def main() -> int:
     report = {
         "sha256": sha,
         "dry_run": args.dry_run,
-        "zenodo": _stamp_zenodo(args.preregistration, args.dry_run),
         "ots": _stamp_ots(args.preregistration, args.dry_run),
         "archive_org": _stamp_ia(args.preregistration, args.dry_run),
+        "notes": "Zenodo intentionally omitted: DOI via Synthēsis+Crossref at publication.",
     }
+    args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2))
     print(f"Stamp report: {args.report}")
     return 0
@@ -2989,7 +2978,7 @@ Expected: PASS.
 
 ```bash
 git add preregistration/PREREGISTRATION.md scripts/preregister.py tests/test_preregister.py
-git commit -m "Task 22: PREREGISTRATION.md v1.0 + stamping script (dry-run mode)"
+git commit -m "Task 22: PREREGISTRATION.md v1.0 + OTS/IA stamping (Zenodo dropped per Synthēsis/Crossref DOI policy)"
 ```
 
 ---
@@ -3192,7 +3181,7 @@ Expected: every test PASS (zero failures, zero errors). If any test fails, STOP 
 - [ ] **Step 2: Stamp preregistration (dry-run for v0.0.1; live before Stage 1 real-data run)**
 
 Run: `python scripts/preregister.py --dry-run --preregistration preregistration/PREREGISTRATION.md --report outputs/stamp_report.json`
-Expected: stamp_report.json written. The live stamp (Zenodo live + OTS + IA) happens immediately before Task 26 real-data run.
+Expected: stamp_report.json written. The live stamp (OTS + IA) happens immediately before Task 26 real-data run.
 
 - [ ] **Step 3: Update README release history**
 
@@ -3214,30 +3203,32 @@ git tag -a v0.0.1 -m "Spec + prereg v1.0; no compute yet"
 
 ---
 
-## Task 26: Live preregistration stamp (Zenodo + OTS + IA)
+## Task 26: Live preregistration stamp (OTS + IA)
 
 **Files:**
-- Modify: `preregistration/PREREGISTRATION.md` (fill in Zenodo DOI, IA URL after stamping)
+- Modify: `preregistration/PREREGISTRATION.md` (fill in OTS receipt path, IA URL after stamping)
 - Create: `preregistration/PREREGISTRATION.md.ots` (OpenTimestamps receipt)
+
+Note: Zenodo is not used. DOI from Synthēsis via Crossref at publication.
 
 - [ ] **Step 1: Verify environment**
 
 Run: `python scripts/preflight.py`
-Expected: all OK. `ZENODO_API_TOKEN` must be set. `ots` binary must be on PATH.
+Expected: all OK. `ots` binary must be on PATH.
 
-- [ ] **Step 2: Implement live Zenodo + IA stamping**
+- [ ] **Step 2: Implement live OTS + IA stamping**
 
-The `_stamp_zenodo` and `_stamp_ia` helpers in `scripts/preregister.py` currently `raise NotImplementedError` for live runs. Replace with the real implementations. For Zenodo: use the REST API (`POST /api/deposit/depositions`, upload file, publish). For IA: use `https://web.archive.org/save/{url}` or the SPN2 API. Add tests that mock the HTTP calls.
+The `_stamp_ia` helper in `scripts/preregister.py` currently `raise NotImplementedError` for live runs. Replace with the real implementation: use `https://web.archive.org/save/{url}` or the SPN2 API against the GitHub-rendered PREREGISTRATION.md URL. Add tests that mock the HTTP call.
 
 Run: `python scripts/preregister.py --preregistration preregistration/PREREGISTRATION.md --report outputs/stamp_report.json`
-Expected: real DOI + OTS receipt + IA URL written to `stamp_report.json` and into `PREREGISTRATION.md`.
+Expected: OTS receipt + IA URL written to `stamp_report.json` and into `PREREGISTRATION.md`.
 
 - [ ] **Step 3: Commit live stamps**
 
 ```bash
-git add preregistration/PREREGISTRATION.md preregistration/PREREGISTRATION.md.ots outputs/stamp_report.json scripts/preregister.py
-git commit -m "Task 26: live preregistration stamp (Zenodo DOI + OTS + IA)"
-git tag -a v0.0.2 -m "Preregistration live-stamped"
+git add preregistration/PREREGISTRATION.md preregistration/PREREGISTRATION.md.ots outputs/stamp_report.json
+git commit -m "Task 26: live preregistration stamp (OTS + IA)"
+git tag -a v0.0.2 -m "Preregistration live-stamped (OTS + IA)"
 ```
 
 ---
@@ -3267,7 +3258,7 @@ git tag -a v0.1.0-feasibility -m "Feasibility report public"
 
 - [ ] **Step 4: If any gate fails: prereg amendment**
 
-Follow spec §6.4 pivot protocol. Draft amendment to `preregistration/PREREGISTRATION.md`, re-stamp Zenodo+OTS+IA, document pivot explicitly in manuscript later.
+Follow spec §6.4 pivot protocol. Draft amendment to `preregistration/PREREGISTRATION.md`, re-stamp OTS+IA (new git tag), document pivot explicitly in manuscript later.
 
 ---
 
@@ -3336,7 +3327,7 @@ git commit -m "Task 28: Stages 2-5 run on real Pairwise70 + dashboard"
 [~20 words] Subset restricted to reviews with arm-level data preserved; non-normal PROs may widen reconstruction error beyond the sensitivity bound reported.
 
 **Primary estimand:** framing flip rate at α=0.05 across Tier-1 dual-framing reviews.
-**Preregistration:** Zenodo DOI + OTS + IA, stamped 2026-04-22.
+**Preregistration:** git tag + OTS + IA, stamped before first real-data run. DOI from Synthēsis via Crossref at publication.
 ```
 
 - [ ] **Step 2: Fill S4 from paper_numbers.json**
@@ -3389,7 +3380,7 @@ Fourth atlas on Pairwise70. Audits continuous-vs-responder framing reproducibili
 - `manuscript/e156_methods_note.md` — E156 draft for Synthēsis
 
 **Spec:** `docs/superpowers/specs/2026-04-22-responder-floor-atlas-design.md` (commit ee81682)
-**Preregistration:** Zenodo [DOI]; OTS receipt in `preregistration/PREREGISTRATION.md.ots`; IA [URL].
+**Preregistration:** OTS receipt in `preregistration/PREREGISTRATION.md.ots`; IA [URL]. Publication DOI from Synthēsis via Crossref.
 
 **Sibling atlases:** repro-floor-atlas, cochrane-modern-re, pi-atlas.
 ```
