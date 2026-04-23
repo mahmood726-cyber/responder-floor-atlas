@@ -33,3 +33,26 @@ def test_preregister_real_file_exists():
     assert "Crossref" in body
     assert "OpenTimestamps" in body or "OTS" in body
     assert "Internet Archive" in body
+
+
+def test_preregister_live_produces_ots_receipt(tmp_path):
+    """Live OTS stamp test — skipped when opentimestamps library is absent."""
+    try:
+        import opentimestamps  # noqa: F401
+    except ImportError:
+        import pytest
+        pytest.skip("opentimestamps library not installed")
+
+    prereg = tmp_path / "prereg.md"
+    prereg.write_text("# live-stamp test\n")
+    result = subprocess.run(
+        [sys.executable, "scripts/preregister.py",
+         "--preregistration", str(prereg),
+         "--report", str(tmp_path / "stamp_report.json")],
+        capture_output=True, text=True, timeout=120,
+    )
+    assert result.returncode == 0, result.stderr
+    ots_candidate = tmp_path / "prereg.md.ots"
+    assert ots_candidate.exists(), (
+        f".ots file not found at {ots_candidate}; stderr: {result.stderr}"
+    )

@@ -1,0 +1,17 @@
+{
+  "sha256": "40577a3d6dd544727ea793a55914f552a16a3bbbcda4e32889a191fb27bab8c9",
+  "dry_run": false,
+  "ots": {
+    "receipt": "preregistration\\PREREGISTRATION.md.ots",
+    "dry_run": false,
+    "attestations": [
+      "PendingAttestation"
+    ],
+    "note": "PendingAttestation is normal immediately after stamping. Bitcoin confirmation arrives within a few hours."
+  },
+  "archive_org": {
+    "status": "deferred_until_github_push",
+    "reason": "No public URL yet: GitHub remote and Pages will be created at Task 30. IA save will target the github.io page URL at that point."
+  },
+  "notes": "Zenodo intentionally omitted: DOI via Synthēsis+Crossref at publication."
+}
