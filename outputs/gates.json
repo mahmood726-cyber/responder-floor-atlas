@@ -2,7 +2,7 @@
   "A": {
     "threshold_reviews_min": 30,
     "threshold_trials_per_review_min": 3,
-    "count": 0,
+    "count": 1,
     "passed": false
   },
   "B": {
@@ -13,7 +13,7 @@
   },
   "C": {
     "threshold_pct_min": 0.2,
-    "actual_pct": 0.023809523809523808,
+    "actual_pct": 0.0425531914893617,
     "passed": false
   },
   "D": {

@@ -54,12 +54,19 @@ def _ma_key(row: pd.Series) -> tuple:
         an = int(row.get("Analysis.number", -1))
     except (TypeError, ValueError):
         an = -1
-    sn_raw = row.get("Subgroup.number", 1)
+    sn_raw = row.get("Subgroup.number")
     try:
-        sn = int(sn_raw) if pd.notna(sn_raw) else 1
+        # Use "overall" sentinel for NaN rather than coercing to 1.
+        # Coercing NaN->1 previously merged overall-analysis rows (Subgroup.number=NaN)
+        # with the first subgroup's rows (Subgroup.number=1), causing Study duplication.
+        sn = int(sn_raw) if pd.notna(sn_raw) else "overall"
     except (TypeError, ValueError):
-        sn = 1
-    return (an, sn)
+        sn = "overall"
+    # Include the Subgroup label so that multiple cross-classification dimensions that
+    # reuse the same Subgroup.number (e.g. "60-79 years" and "Fatal stroke" both using
+    # Subgroup.number=1 under different Analysis.numbers but same key) are distinguished.
+    sg_label = str(row.get("Subgroup", "")).strip()
+    return (an, sn, sg_label)
 
 
 def _ma_label(rows: pd.DataFrame) -> str:
@@ -78,23 +85,64 @@ def _review_id_from_path(path: Path) -> str:
     return stem
 
 
+def _resolve_trial_keys(rows: pd.DataFrame) -> pd.Series:
+    """Return a Series of trial keys for the given MA rows.
+
+    Strategy:
+    1. Deduplicate exact-duplicate rows first (same Study + same numeric arm data).
+    2. If Study is still not unique within the MA, use a composite key
+       (Study|n_t=N|n_c=N) to distinguish multi-arm or ambiguous rows.
+    3. If even the composite key is not unique, append a row-index suffix.
+    """
+    def _composite(r) -> str:
+        study = str(r["Study"])
+        n_t = r.get("Experimental.N")
+        n_c = r.get("Control.N")
+        n_t_k = "NA" if pd.isna(n_t) else int(n_t)
+        n_c_k = "NA" if pd.isna(n_c) else int(n_c)
+        return f"{study}|n_t={n_t_k}|n_c={n_c_k}"
+
+    study_counts = rows["Study"].value_counts()
+    duplicated_studies = set(study_counts[study_counts > 1].index)
+    keys: list[str] = []
+    seen: dict[str, int] = {}
+    for _, r in rows.iterrows():
+        study = str(r["Study"])
+        if study in duplicated_studies:
+            base_key = _composite(r)
+        else:
+            base_key = study
+        # Final tiebreaker: if composite key is still duplicated, append occurrence index.
+        count = seen.get(base_key, 0)
+        key = base_key if count == 0 else f"{base_key}#{count + 1}"
+        seen[base_key] = count + 1
+        keys.append(key)
+    return pd.Series(keys, index=rows.index)
+
+
 def _extract_trial_rows(review_id: str, cont_rows: pd.DataFrame, dich_rows: pd.DataFrame,
                         outcome_label: str, instruments) -> list[dict]:
     instr = match_instrument(outcome_label, instruments)
     instrument_id = instr.id if instr else None
 
-    # Index by Study (trial identifier); if a study appears multiple times, mark ID_AMBIGUOUS.
-    def _index(rows):
-        counts = rows["Study"].value_counts()
-        unique = set(counts[counts == 1].index)
-        idx = {r["Study"]: r for _, r in rows.iterrows() if r["Study"] in unique}
-        ambiguous = set(counts[counts > 1].index)
-        return idx, ambiguous
+    # Deduplicate exact-duplicate rows within each MA before building keys.
+    # Real Pairwise70 RDAs sometimes store identical rows multiple times.
+    key_cols = ["Study", "Experimental.N", "Control.N",
+                "Experimental.mean", "Experimental.SD",
+                "Experimental.cases", "Control.cases"]
+    dedup_cols_c = [c for c in key_cols if c in cont_rows.columns]
+    dedup_cols_d = [c for c in key_cols if c in dich_rows.columns]
+    cont_rows = cont_rows.drop_duplicates(subset=dedup_cols_c).reset_index(drop=True)
+    dich_rows = dich_rows.drop_duplicates(subset=dedup_cols_d).reset_index(drop=True)
 
-    cont_idx, cont_amb = _index(cont_rows)
-    dich_idx, dich_amb = _index(dich_rows)
+    # Build composite trial keys: Study alone when unique, Study|n_t=N|n_c=N when duplicated.
+    cont_keys = _resolve_trial_keys(cont_rows)
+    dich_keys = _resolve_trial_keys(dich_rows)
+
+    cont_idx = dict(zip(cont_keys, (r for _, r in cont_rows.iterrows())))
+    dich_idx = dict(zip(dich_keys, (r for _, r in dich_rows.iterrows())))
     shared = set(cont_idx) & set(dich_idx)
-    amb = cont_amb | dich_amb
+    amb: set[str] = set()  # After dedup + composite keys, ambiguity is eliminated.
 
     def _int_or_none(x):
         try:
@@ -138,15 +186,15 @@ def _extract_trial_rows(review_id: str, cont_rows: pd.DataFrame, dich_rows: pd.D
         row["reason"] = reason
         rows_out.append(row)
 
-    # Also emit ambiguous-ID rows with status=ID_AMBIGUOUS
-    for study in sorted(amb):
+    # amb is always empty after the dedup + composite key strategy, but kept for safety.
+    for trial_key in sorted(amb):
         rows_out.append({
-            "review_id": review_id, "outcome_group": outcome_label, "trial_id": str(study),
+            "review_id": review_id, "outcome_group": outcome_label, "trial_id": str(trial_key),
             "mean_t": None, "sd_t": None, "n_t": None, "mean_c": None, "sd_c": None, "n_c": None,
             "events_t": None, "n_t_dich": None, "events_c": None, "n_c_dich": None,
             "instrument_id": instrument_id,
             "status": StatusCode.ID_AMBIGUOUS.value,
-            "reason": f"trial {study} appears in multiple rows within one MA",
+            "reason": f"trial {trial_key} appears in multiple rows within one MA",
         })
     return rows_out
 

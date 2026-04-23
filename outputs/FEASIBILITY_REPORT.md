@@ -7,7 +7,7 @@ Per spec §6.3. Gates A/B/C are hard stops; D is exploratory.
 {
   "threshold_reviews_min": 30,
   "threshold_trials_per_review_min": 3,
-  "count": 0,
+  "count": 1,
   "passed": false
 }
 ```
@@ -26,7 +26,7 @@ Per spec §6.3. Gates A/B/C are hard stops; D is exploratory.
 ```json
 {
   "threshold_pct_min": 0.2,
-  "actual_pct": 0.023809523809523808,
+  "actual_pct": 0.0425531914893617,
   "passed": false
 }
 ```
