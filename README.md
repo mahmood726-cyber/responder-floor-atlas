@@ -29,3 +29,4 @@ Implementation structure (per spec §7) is created when the implementation plan 
 ## Release history
 
 - **v0.0.1** (2026-04-22): design spec + preregistration v1.0 + 30-task implementation plan + Tasks 0-24 executed (86 tests; full 6-stage pipeline working end-to-end on fixture corpus; Sentinel 0 BLOCK; negative control passed with 100% arms ε<0.01). Awaiting Tasks 26-30 (live OTS/IA stamping; real Pairwise70 Stage 1 scan; E156 draft; GitHub Pages deploy).
+- **v0.2.0** (2026-04-23): Pivoted to null/corpus-breadth finding. Real Pairwise70 Stage 1→5 executed on v1.1 panel; 4 of 595 reviews statistically analyzable after instrument-matching + arm-level gates. Primary contribution is the empirical feasibility finding; flip-rate/reconstruction/MID-heterogeneity results reported as proof-of-concept on the 4 qualifying reviews. 94 tests; Sentinel 0 BLOCK. Remaining: E156 draft + GitHub push + Pages.

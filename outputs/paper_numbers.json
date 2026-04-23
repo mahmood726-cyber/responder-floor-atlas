@@ -1,0 +1,16 @@
+{
+  "total_rows_scanned": 5487,
+  "rows_ok": 2013,
+  "reviews_pooled": 4,
+  "q1_flip_rate": 0.25,
+  "q1_magnitude_flip_rate": 1.0,
+  "q2_median_epsilon": 0.26692786371859106,
+  "q3_per_instrument_median_delta_hat": {
+    "bmi_change": 2.8529876763833926,
+    "body_weight_kg": 7.995458489779303,
+    "body_weight_pct": 6.68115914731059,
+    "sf36_mcs": 3.668839612014931,
+    "sf36_pcs": 6.590657164317356,
+    "sf36_physical_function": 7.728364648023668
+  }
+}

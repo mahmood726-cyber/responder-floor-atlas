@@ -24,6 +24,16 @@ Deliverables: Python pipeline + R validation + E156 Methods Note (Synthēsis tar
 
 ---
 
+### Post-feasibility update (2026-04-23, v0.1.1-amendment → v0.2.0)
+
+Stage 1 on real Pairwise70 revealed that only 51 of 595 Cochrane reviews (8.6%) pool the same outcome in both continuous and dichotomous form. After v1.1 panel expansion (weight, BMI, SF-36 added; prereg amendment OTS-stamped), only 4 reviews had ≥3 trials with extractable arm-level data + instrument match. Gates A/B/C/D all FAIL.
+
+**The paper pivots from "framing flip rate atlas" to "corpus-breadth barrier finding":** the primary contribution is the empirical demonstration that Cochrane's current dual-framing practice is sparse enough that methodological audits of framing-reproducibility require purpose-built corpora, not convenience samples. The 4 passing reviews become illustrative case studies rather than the main statistical claim. The v1.1 panel expansion methodology + preregistration amendment process become the methodological contribution.
+
+All preregistered analyses ran successfully on the available data; the headline number becomes "51 of 595 reviews exhibit dual-framing, 4 of those are statistically-analyzable under our panel + arm-level contract." Q2 reconstruction fidelity and Q3 implied-MID atlas are reported descriptively on the 4 qualifying reviews as proof-of-concept.
+
+---
+
 ## 2. Background and motivation
 
 Patient-reported outcomes (PROs) — KCCQ, SGRQ, EQ-5D-5L, PROMIS, ODI, PHQ-9 and peers — are the clinically interpretable endpoints of modern effectiveness trials. Their meta-analytic treatment is split between two framings:

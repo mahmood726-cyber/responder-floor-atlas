@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><title>Responder Floor Atlas</title>
+<meta property="og:title" content="Responder Floor Atlas">
+<style>
+body{font-family:system-ui,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#222}
+h1{margin-bottom:.25rem}h2{margin-top:2rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.panel{margin-bottom:2rem}
+.muted{color:#666;font-size:.85rem}
+table{border-collapse:collapse;margin:.5rem 0}
+th,td{padding:.25rem .5rem;border:1px solid #ddd;font-size:.9rem;text-align:left}
+</style></head><body>
+<h1>Responder Floor Atlas</h1>
+<p class="muted">Continuous-vs-responder framing reproducibility on Pairwise70 &mdash; generated from commit af97257 on 2026-04-23.</p>
+
+<div class="panel" id="panel-flip">
+<h2>Q1 &mdash; Framing flip rate</h2>
+<table><tr><th>Metric</th><th>Value</th><th>95% CI (clustered bootstrap)</th></tr><tr><td>Reviews pooled</td><td>4</td><td>&mdash;</td></tr><tr><td>Framing flips (&alpha;=0.05)</td><td>1 (25.0%)</td><td>[0.0%, 75.0%]</td></tr><tr><td>Magnitude flips (|&Delta; logRR|&gt;0.1)</td><td>4 (100.0%)</td><td>&mdash;</td></tr></table>
+</div>
+
+<div class="panel" id="panel-reconstruction">
+<h2>Q2 &mdash; Reconstruction fidelity</h2>
+<table><tr><th>Instrument</th><th>n trials</th><th>Median |&epsilon;|</th><th>95th percentile</th><th>% |&epsilon;|&gt;0.05</th></tr><tr><td>bmi_change</td><td>236</td><td>0.3017</td><td>0.7276</td><td>93.6%</td></tr><tr><td>body_weight_kg</td><td>586</td><td>0.2596</td><td>0.6396</td><td>88.7%</td></tr><tr><td>body_weight_pct</td><td>699</td><td>0.2244</td><td>0.6676</td><td>83.3%</td></tr><tr><td>sf36_mcs</td><td>172</td><td>0.2738</td><td>0.6502</td><td>91.9%</td></tr><tr><td>sf36_pcs</td><td>172</td><td>0.3480</td><td>0.5858</td><td>91.9%</td></tr><tr><td>sf36_physical_function</td><td>148</td><td>0.3129</td><td>0.5471</td><td>94.6%</td></tr></table>
+</div>
+
+<div class="panel" id="panel-implied-mid">
+<h2>Q3 &mdash; Implied-MID atlas</h2>
+<table><tr><th>Instrument</th><th>n trials</th><th>Median implied MID</th><th>95% range</th></tr><tr><td>bmi_change</td><td>236</td><td>2.853</td><td>-38.507&ndash;8.712</td></tr><tr><td>body_weight_kg</td><td>586</td><td>7.995</td><td>-89.826&ndash;23.916</td></tr><tr><td>body_weight_pct</td><td>699</td><td>6.681</td><td>-6.188&ndash;22.772</td></tr><tr><td>sf36_mcs</td><td>172</td><td>3.669</td><td>-14.813&ndash;18.858</td></tr><tr><td>sf36_pcs</td><td>172</td><td>6.591</td><td>-8.184&ndash;20.018</td></tr><tr><td>sf36_physical_function</td><td>148</td><td>7.728</td><td>-8.466&ndash;22.684</td></tr></table>
+</div>
+
+<p class="muted">Spec: docs/superpowers/specs/2026-04-22-responder-floor-atlas-design.md</p>
+</body></html>
