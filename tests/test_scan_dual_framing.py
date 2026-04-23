@@ -20,8 +20,8 @@ def test_scan_emits_parquet_with_expected_rows(tmp_path):
     )
     assert result.returncode == 0, result.stderr
     df = pd.read_parquet(out_dir / "dual_framing_index.parquet")
-    # Three trials (T1/T2/T3) × 1 review = 3 rows
-    assert len(df) == 3
+    # fixture_R001: 3 trials (T1/T2/T3); negative_control_kccq: 5 trials (T1-T5) = 8 rows total
+    assert len(df) == 8
     expected_cols = {
         "review_id", "outcome_group", "trial_id",
         "mean_t", "sd_t", "n_t", "events_t",
