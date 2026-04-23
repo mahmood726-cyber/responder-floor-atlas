@@ -25,3 +25,7 @@ responder-floor-atlas/
 ```
 
 Implementation structure (per spec §7) is created when the implementation plan executes.
+
+## Release history
+
+- **v0.0.1** (2026-04-22): design spec + preregistration v1.0 + 30-task implementation plan + Tasks 0-24 executed (86 tests; full 6-stage pipeline working end-to-end on fixture corpus; Sentinel 0 BLOCK; negative control passed with 100% arms ε<0.01). Awaiting Tasks 26-30 (live OTS/IA stamping; real Pairwise70 Stage 1 scan; E156 draft; GitHub Pages deploy).
