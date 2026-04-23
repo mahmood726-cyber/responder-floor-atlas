@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -10,14 +11,35 @@ from pathlib import Path
 
 
 def check_pairwise70() -> tuple[bool, str]:
-    candidates = [Path(r"C:\Projects\Pairwise70"), Path.home() / "Pairwise70"]
+    """Discover Pairwise70 root from PAIRWISE70_ROOT env var, then configs/pipeline.yml, then fallback candidates."""
+    candidates: list[Path] = []
+
+    # 1. Check PAIRWISE70_ROOT env var
+    env_path = os.environ.get("PAIRWISE70_ROOT")
+    if env_path:
+        candidates.append(Path(env_path))
+
+    # 2. Check configs/pipeline.yml
+    try:
+        import yaml
+        cfg_path = Path(__file__).resolve().parent.parent / "configs" / "pipeline.yml"
+        cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
+        cfg_pairwise = cfg.get("paths", {}).get("pairwise70")
+        if cfg_pairwise:
+            candidates.append(Path(cfg_pairwise))
+    except Exception:
+        pass
+
+    # 3. Fallback candidates
+    candidates.append(Path.home() / "Pairwise70")
+
     for c in candidates:
         if c.is_dir():
             rda_count = sum(1 for _ in c.rglob("*.rda"))
             if rda_count >= 500:
                 return True, f"{c} ({rda_count} RDA files)"
             return False, f"{c} exists but only {rda_count} RDA files (<500)"
-    return False, "Pairwise70 directory not found at C:\\Projects\\Pairwise70 or ~/Pairwise70"
+    return False, f"Pairwise70 not found (tried: {', '.join(str(c) for c in candidates)})"
 
 
 def check_import(modname: str) -> tuple[bool, str]:

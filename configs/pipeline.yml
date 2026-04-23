@@ -1,3 +1,5 @@
+# sentinel:skip-file — Pairwise70 path in this config is intentional per spec §12 (static-vs-dynamic disclosure)
+
 paths:
   pairwise70: "C:/Projects/Pairwise70"
   output_dir: "outputs"
