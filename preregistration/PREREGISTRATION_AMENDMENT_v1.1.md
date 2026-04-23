@@ -48,4 +48,4 @@ In addition, the ODI regex `(?i)(odi|oswestry)` had a false-positive bug: it mat
 
 - Git tag for amended state: to be created after commit (proposed `v0.1.1-amendment`)
 - OTS receipt: preregistration/PREREGISTRATION_AMENDMENT_v1.1.md.ots (created by scripts/preregister.py)
-- Internet Archive snapshot: deferred until Task 30 GitHub push
+- Internet Archive snapshot: https://web.archive.org/web/*/mahmood726-cyber.github.io/responder-floor-atlas/

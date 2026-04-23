@@ -56,5 +56,5 @@ KCCQ-Overall Summary (d=+1, MID=5), SGRQ-Total (d=−1, MID=4), EQ-5D-5L index (
 - Spec commit: ee81682
 - Preregistration git tag: [TO FILL BEFORE FIRST REAL-DATA RUN]
 - OTS receipt: preregistration/PREREGISTRATION.md.ots
-- Internet Archive URL: [FILLED BY scripts/preregister.py at live-stamp time]
+- Internet Archive URL: https://web.archive.org/web/*/github.com/mahmood726-cyber/responder-floor-atlas/blob/v0.0.1/preregistration/PREREGISTRATION.md
 - Publication DOI (Crossref via Synthēsis): [FILLED AT PUBLICATION]
