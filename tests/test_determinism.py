@@ -69,7 +69,7 @@ def _run_deterministic_stages(out: Path) -> None:
 
 
 @pytest.mark.skipif(
-    not (FIXTURE_CORPUS / "synthetic_one_review.rda").exists(),
+    not (FIXTURE_CORPUS / "fixture_R001_data.rda").exists(),
     reason="fixture RDA not generated",
 )
 def test_reconstructions_byte_identical_across_runs(tmp_path):
@@ -128,7 +128,7 @@ def test_reconstructions_byte_identical_across_runs(tmp_path):
 
 
 @pytest.mark.skipif(
-    not (FIXTURE_CORPUS / "synthetic_one_review.rda").exists(),
+    not (FIXTURE_CORPUS / "fixture_R001_data.rda").exists(),
     reason="fixture RDA not generated",
 )
 def test_dual_framing_index_stability(tmp_path):
@@ -151,7 +151,7 @@ def test_dual_framing_index_stability(tmp_path):
 
 
 @pytest.mark.skipif(
-    not (FIXTURE_CORPUS / "synthetic_one_review.rda").exists(),
+    not (FIXTURE_CORPUS / "fixture_R001_data.rda").exists(),
     reason="fixture RDA not generated",
 )
 def test_mid_inferences_stability(tmp_path):

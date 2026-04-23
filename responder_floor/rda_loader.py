@@ -1,17 +1,16 @@
 """RDA loader — pyreadr primary, rpy2 secondary, R-subprocess fallback.
 
-Pairwise70 RDAs store per-review nested lists that pyreadr's flat-dataframe
-API cannot reconstruct.  rpy2 handles nested S4 cleanly but requires R to have
-been built as a shared library — a configuration that is absent on standard
-Windows R installs.  When both fail, the loader shells out to Rscript with a
-bundled helper script that uses jsonlite to serialise the nested list to JSON
-before parsing it back in Python.
+Supports two RDA layouts:
+  - Flat data.frame (real Pairwise70 schema): pyreadr returns a DataFrame
+    directly.  load_rda() returns that DataFrame.
+  - Nested list (legacy fixture schema): pyreadr returns empty; rpy2 or
+    Rscript/jsonlite deserialise to a Python dict.  load_rda() returns dict.
 
 Strategy order (first success wins):
-  1. pyreadr  — zero overhead, works for flat/dataframe RDAs.
-  2. rpy2     — works when `libR.so`/`R.dll` is a shared library.
+  1. pyreadr  — zero overhead, works for flat/dataframe RDAs; returns DataFrame.
+  2. rpy2     — works when `libR.so`/`R.dll` is a shared library; returns dict.
   3. Rscript subprocess + jsonlite  — works whenever `Rscript` is on PATH or
-     R_HOME is set; no compile-time R headers required.
+     R_HOME is set; no compile-time R headers required; returns dict.
 
 Note: rpy2 is declared as an optional extra (r_bridge) since it fails to
 install on Windows without R dev headers.
@@ -34,14 +33,14 @@ _R_SCRIPT_HELPER = Path(__file__).parent / "_rda_to_json.R"
 # Strategy 1: pyreadr
 # ---------------------------------------------------------------------------
 
-def _load_pyreadr(path: Path) -> dict[str, Any] | None:
-    """Try pyreadr; return None if it returns an empty dict or a bare DataFrame.
+def _load_pyreadr(path: Path):
+    """Try pyreadr; return DataFrame, dict, or None.
 
     pyreadr's read_r returns an OrderedDict whose values are DataFrames.
-    Nested R list structures produce an *empty* OrderedDict — signal "need
-    fallback" by returning None in that case.  A non-empty result whose sole
-    value is a DataFrame is similarly opaque (we cannot reconstruct the nested
-    list from it), so return None there too.
+    - Flat data.frame RDA (real Pairwise70): returns the DataFrame directly.
+    - Nested R list structures produce an *empty* OrderedDict — return None
+      to signal "need fallback".
+    - If the value is already a dict-like structure (unusual), return it.
     """
     try:
         import pyreadr
@@ -51,9 +50,9 @@ def _load_pyreadr(path: Path) -> dict[str, Any] | None:
             return None
         key = next(iter(data))
         obj = data[key]
-        # DataFrame → pyreadr read it as a flat table, not a nested list.
+        # Flat data.frame → return the DataFrame directly (new Pairwise70 schema)
         if hasattr(obj, "to_dict"):
-            return None
+            return obj
         # If it's already a dict-like structure, return it.
         if isinstance(obj, dict):
             return obj
@@ -184,8 +183,8 @@ def _load_rscript(path: Path) -> dict[str, Any]:
 # Public API
 # ---------------------------------------------------------------------------
 
-def load_rda(path: Path | str) -> dict[str, Any]:
-    """Load an RDA file into a Python dict structure.
+def load_rda(path: Path | str):
+    """Load an RDA file.
 
     Tries pyreadr first (zero-overhead, handles flat DataFrames), then rpy2
     (handles nested S4, needs R shared library), then falls back to an Rscript
@@ -198,8 +197,12 @@ def load_rda(path: Path | str) -> dict[str, Any]:
 
     Returns
     -------
+    pandas.DataFrame
+        For flat data.frame RDAs (real Pairwise70 schema) — returned by
+        pyreadr directly.
     dict
-        The first R object in the file, converted to a Python dict.
+        For nested-list RDAs (legacy fixture schema) — returned by rpy2 or
+        Rscript/jsonlite.
 
     Raises
     ------

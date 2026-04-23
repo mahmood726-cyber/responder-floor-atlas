@@ -27,7 +27,7 @@ FIXTURE_CORPUS = Path("tests/fixtures")
 
 
 @pytest.mark.skipif(
-    not (FIXTURE_CORPUS / "synthetic_one_review.rda").exists(),
+    not (FIXTURE_CORPUS / "fixture_R001_data.rda").exists(),
     reason="fixture RDA not generated",
 )
 def test_end_to_end_all_stages(tmp_path):

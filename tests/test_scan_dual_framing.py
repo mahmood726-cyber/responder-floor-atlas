@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-FIXTURE = Path("tests/fixtures/synthetic_one_review.rda")
+FIXTURE = Path("tests/fixtures/fixture_R001_data.rda")
 
 
 @pytest.mark.skipif(not FIXTURE.exists(), reason="fixture not generated")

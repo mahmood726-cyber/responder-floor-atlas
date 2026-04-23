@@ -1,0 +1,5958 @@
+{
+  "reviews_scanned": 595,
+  "reviews_with_dual_pairs": 44,
+  "total_rows_emitted": 4271,
+  "errors": [],
+  "per_review": [
+    {
+      "review_id": "CD000028_pub4",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000143_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000214_pub3",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000219_pub5",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000247_pub4",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000402_pub5",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 22,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000478_pub5",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD000512_pub3",
+      "n_mas_total": 19,
+      "n_continuous": 2,
+      "n_dichotomous": 17,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 18,
+      "n_trial_rows_emitted": 26
+    },
+    {
+      "review_id": "CD000547_pub3",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001059_pub6",
+      "n_mas_total": 66,
+      "n_continuous": 2,
+      "n_dichotomous": 64,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 2,
+      "n_trial_rows_emitted": 2
+    },
+    {
+      "review_id": "CD001072_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001125_pub2",
+      "n_mas_total": 77,
+      "n_continuous": 62,
+      "n_dichotomous": 11,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 366,
+      "n_trial_rows_emitted": 49
+    },
+    {
+      "review_id": "CD001155_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001321_pub7",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001396_pub4",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 15,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001431_pub6",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001533_pub7",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001552_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001703_pub4",
+      "n_mas_total": 27,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 24,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001797_pub4",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001837_pub4",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001909_pub4",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001920_pub4",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD001939_pub5",
+      "n_mas_total": 39,
+      "n_continuous": 2,
+      "n_dichotomous": 37,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002042_pub6",
+      "n_mas_total": 71,
+      "n_continuous": 0,
+      "n_dichotomous": 69,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002052_pub4",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002112_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 18,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002115_pub6",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002118_pub7",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002122_pub3",
+      "n_mas_total": 99,
+      "n_continuous": 9,
+      "n_dichotomous": 63,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002203_pub5",
+      "n_mas_total": 36,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 22,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002243_pub5",
+      "n_mas_total": 52,
+      "n_continuous": 0,
+      "n_dichotomous": 44,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002290_pub6",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002303_pub4",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002769_pub6",
+      "n_mas_total": 43,
+      "n_continuous": 34,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 9,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002971_pub6",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD002974_pub3",
+      "n_mas_total": 9,
+      "n_continuous": 1,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 1,
+      "n_trial_rows_emitted": 1
+    },
+    {
+      "review_id": "CD003129_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003214_pub4",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003216_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003218_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003308_pub3",
+      "n_mas_total": 27,
+      "n_continuous": 7,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 7,
+      "n_dual_pairs": 2,
+      "n_trial_rows_emitted": 9
+    },
+    {
+      "review_id": "CD003331_pub6",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003333_pub4",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003357_pub5",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003376_pub4",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003414_pub4",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003429_pub5",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003451_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003477_pub5",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003511_pub6",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003519_pub5",
+      "n_mas_total": 30,
+      "n_continuous": 16,
+      "n_dichotomous": 10,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 25,
+      "n_trial_rows_emitted": 165
+    },
+    {
+      "review_id": "CD003594_pub7",
+      "n_mas_total": 39,
+      "n_continuous": 0,
+      "n_dichotomous": 28,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003598_pub3",
+      "n_mas_total": 36,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 23,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003743_pub3",
+      "n_mas_total": 35,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003774_pub5",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003833_pub5",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD003962_pub3",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 16,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004143_pub6",
+      "n_mas_total": 166,
+      "n_continuous": 0,
+      "n_dichotomous": 161,
+      "n_mixed": 0,
+      "n_giv": 5,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004184_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004307_pub7",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004366_pub7",
+      "n_mas_total": 27,
+      "n_continuous": 25,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004372_pub3",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004376_pub4",
+      "n_mas_total": 6,
+      "n_continuous": 3,
+      "n_dichotomous": 0,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004406_pub6",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004417_pub6",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004508_pub5",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004661_pub4",
+      "n_mas_total": 26,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004667_pub6",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004703_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004736_pub6",
+      "n_mas_total": 79,
+      "n_continuous": 0,
+      "n_dichotomous": 52,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004762_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004871_pub5",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004904_pub4",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004925_pub4",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004953_pub5",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD004992_pub4",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005133_pub4",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005187_pub6",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005343_pub7",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005470_pub4",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 14,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005495_pub5",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005566_pub4",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005582_pub5",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005595_pub4",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD005951_pub5",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006023_pub4",
+      "n_mas_total": 34,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006027_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006124_pub3",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006140_pub3",
+      "n_mas_total": 21,
+      "n_continuous": 6,
+      "n_dichotomous": 8,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006182_pub3",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006185_pub6",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006214_pub5",
+      "n_mas_total": 1,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006257_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006268_pub3",
+      "n_mas_total": 34,
+      "n_continuous": 12,
+      "n_dichotomous": 16,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 99,
+      "n_trial_rows_emitted": 269
+    },
+    {
+      "review_id": "CD006273_pub4",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006404_pub5",
+      "n_mas_total": 61,
+      "n_continuous": 0,
+      "n_dichotomous": 61,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006448_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 15,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 2,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006475_pub3",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006515_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006536_pub5",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 19,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006589_pub5",
+      "n_mas_total": 40,
+      "n_continuous": 10,
+      "n_dichotomous": 7,
+      "n_mixed": 1,
+      "n_giv": 22,
+      "n_dual_pairs": 13,
+      "n_trial_rows_emitted": 100
+    },
+    {
+      "review_id": "CD006606_pub5",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006632_pub3",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006680_pub4",
+      "n_mas_total": 26,
+      "n_continuous": 0,
+      "n_dichotomous": 24,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006689_pub3",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006712_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006714_pub3",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006742_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006742_pub4",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006839_pub5",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006913_pub3",
+      "n_mas_total": 69,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 64,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006919_pub5",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006942_pub4",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD006982_pub5",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007024_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007026_pub7",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007079_pub4",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007110_pub4",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007130_pub5",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007131_pub5",
+      "n_mas_total": 7,
+      "n_continuous": 2,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 8,
+      "n_trial_rows_emitted": 29
+    },
+    {
+      "review_id": "CD007156_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007310_pub3",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007374_pub3",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 16,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007388_pub3",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007491_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007569_pub4",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007572_pub4",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007639_pub3",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007674_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007689_pub5",
+      "n_mas_total": 9,
+      "n_continuous": 1,
+      "n_dichotomous": 4,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007693_pub3",
+      "n_mas_total": 1,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007784_pub3",
+      "n_mas_total": 61,
+      "n_continuous": 0,
+      "n_dichotomous": 31,
+      "n_mixed": 30,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007798_pub6",
+      "n_mas_total": 28,
+      "n_continuous": 4,
+      "n_dichotomous": 16,
+      "n_mixed": 0,
+      "n_giv": 8,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007809_pub3",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 21,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007837_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007859_pub5",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007872_pub4",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 18,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007895_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007896_pub4",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD007911_pub4",
+      "n_mas_total": 96,
+      "n_continuous": 73,
+      "n_dichotomous": 14,
+      "n_mixed": 4,
+      "n_giv": 5,
+      "n_dual_pairs": 175,
+      "n_trial_rows_emitted": 111
+    },
+    {
+      "review_id": "CD008063_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008112_pub3",
+      "n_mas_total": 26,
+      "n_continuous": 18,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008145_pub4",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008165_pub5",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008176_pub3",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 15,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008237_pub4",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008309_pub3",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 19,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008349_pub5",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 20,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008469_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008493_pub5",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008552_pub8",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008564_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008576_pub5",
+      "n_mas_total": 17,
+      "n_continuous": 1,
+      "n_dichotomous": 16,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 7,
+      "n_trial_rows_emitted": 5
+    },
+    {
+      "review_id": "CD008628_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008635_pub3",
+      "n_mas_total": 18,
+      "n_continuous": 2,
+      "n_dichotomous": 0,
+      "n_mixed": 1,
+      "n_giv": 15,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008688_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008709_pub4",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 18,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008771_pub3",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 20,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008858_pub5",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008873_pub5",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008879_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008940_pub4",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008973_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD008995_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009022_pub4",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009102_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009106_pub3",
+      "n_mas_total": 30,
+      "n_continuous": 19,
+      "n_dichotomous": 3,
+      "n_mixed": 6,
+      "n_giv": 2,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009235_pub4",
+      "n_mas_total": 49,
+      "n_continuous": 0,
+      "n_dichotomous": 18,
+      "n_mixed": 31,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009244_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009252_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009298_pub3",
+      "n_mas_total": 90,
+      "n_continuous": 3,
+      "n_dichotomous": 87,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009362_pub4",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009417_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009508_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009531_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009535_pub3",
+      "n_mas_total": 30,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009609_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 8,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009679_pub3",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009730_pub3",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009733_pub4",
+      "n_mas_total": 17,
+      "n_continuous": 6,
+      "n_dichotomous": 11,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009749_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009752_pub3",
+      "n_mas_total": 23,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 22,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009788_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD009885_pub4",
+      "n_mas_total": 208,
+      "n_continuous": 30,
+      "n_dichotomous": 87,
+      "n_mixed": 36,
+      "n_giv": 55,
+      "n_dual_pairs": 35,
+      "n_trial_rows_emitted": 4
+    },
+    {
+      "review_id": "CD009945_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010001_pub4",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010136_pub4",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010145_pub2",
+      "n_mas_total": 34,
+      "n_continuous": 0,
+      "n_dichotomous": 27,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010163_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010189_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010216_pub10",
+      "n_mas_total": 28,
+      "n_continuous": 20,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010216_pub9",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 19,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010290_pub4",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010333_pub4",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010441_pub3",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010533_pub3",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010583_pub6",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010779_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010856_pub3",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010861_pub3",
+      "n_mas_total": 18,
+      "n_continuous": 3,
+      "n_dichotomous": 6,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD010966_pub4",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011039_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011044_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011060_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011120_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011192_pub4",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 22,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011197_pub3",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 17,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011204_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011218_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011225_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 14,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011276_pub3",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 15,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011305_pub3",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011330_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011381_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011468_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011506_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011535_pub7",
+      "n_mas_total": 96,
+      "n_continuous": 18,
+      "n_dichotomous": 60,
+      "n_mixed": 18,
+      "n_giv": 0,
+      "n_dual_pairs": 362,
+      "n_trial_rows_emitted": 1115
+    },
+    {
+      "review_id": "CD011575_pub3",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 19,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011600_pub3",
+      "n_mas_total": 27,
+      "n_continuous": 0,
+      "n_dichotomous": 19,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011624_pub3",
+      "n_mas_total": 44,
+      "n_continuous": 0,
+      "n_dichotomous": 29,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011626_pub3",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011627_pub3",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011670_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011671_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011689_pub4",
+      "n_mas_total": 60,
+      "n_continuous": 0,
+      "n_dichotomous": 53,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011762_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011778_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011793_pub3",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011800_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011806_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011841_pub3",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011851_pub3",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011852_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 11,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 8,
+      "n_trial_rows_emitted": 6
+    },
+    {
+      "review_id": "CD011858_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011866_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD011885_pub2",
+      "n_mas_total": 60,
+      "n_continuous": 0,
+      "n_dichotomous": 32,
+      "n_mixed": 28,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012049_pub2",
+      "n_mas_total": 32,
+      "n_continuous": 28,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 24,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012067_pub3",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 21,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012079_pub2",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012152_pub4",
+      "n_mas_total": 35,
+      "n_continuous": 0,
+      "n_dichotomous": 33,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012170_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012178_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012182_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 4,
+      "n_dichotomous": 9,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012186_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012214_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012265_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012268_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012335_pub2",
+      "n_mas_total": 27,
+      "n_continuous": 15,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 2,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012397_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012426_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012429_pub2",
+      "n_mas_total": 26,
+      "n_continuous": 0,
+      "n_dichotomous": 21,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012445_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012503_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012532_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012570_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012572_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012586_pub2",
+      "n_mas_total": 26,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 17,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012589_pub2",
+      "n_mas_total": 36,
+      "n_continuous": 19,
+      "n_dichotomous": 7,
+      "n_mixed": 9,
+      "n_giv": 1,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012594_pub2",
+      "n_mas_total": 1,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012609_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012623_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012635_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 21,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012642_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012693_pub3",
+      "n_mas_total": 34,
+      "n_continuous": 0,
+      "n_dichotomous": 28,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012712_pub2",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012718_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012734_pub2",
+      "n_mas_total": 30,
+      "n_continuous": 3,
+      "n_dichotomous": 22,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 3,
+      "n_trial_rows_emitted": 6
+    },
+    {
+      "review_id": "CD012757_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012850_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012886_pub3",
+      "n_mas_total": 22,
+      "n_continuous": 20,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012891_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012905_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012925_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012942_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012965_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 4,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012967_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012993_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD012997_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013023_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013038_pub3",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013042_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013051_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013052_pub3",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013053_pub3",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013054_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013055_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013056_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013057_pub3",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013059_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013071_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013078_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013105_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 25,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013108_pub2",
+      "n_mas_total": 41,
+      "n_continuous": 0,
+      "n_dichotomous": 39,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013111_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013158_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013166_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013197_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 10,
+      "n_dichotomous": 7,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 2,
+      "n_trial_rows_emitted": 2
+    },
+    {
+      "review_id": "CD013232_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 18,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013255_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013278_pub3",
+      "n_mas_total": 92,
+      "n_continuous": 0,
+      "n_dichotomous": 76,
+      "n_mixed": 16,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013284_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013294_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013295_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013303_pub2",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 23,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013329_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013331_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013332_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013342_pub2",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 21,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013344_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013353_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013355_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013358_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 21,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013366_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013377_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013396_pub2",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 22,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013408_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013414_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013421_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013425_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013429_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013445_pub2",
+      "n_mas_total": 36,
+      "n_continuous": 0,
+      "n_dichotomous": 29,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013456_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013462_pub3",
+      "n_mas_total": 9,
+      "n_continuous": 1,
+      "n_dichotomous": 7,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013468_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013474_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013476_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013508_pub3",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013524_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013539_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013541_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013550_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 4,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013561_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013571_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013590_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013591_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013595_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013613_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013614_pub2",
+      "n_mas_total": 154,
+      "n_continuous": 0,
+      "n_dichotomous": 65,
+      "n_mixed": 89,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013616_pub2",
+      "n_mas_total": 56,
+      "n_continuous": 21,
+      "n_dichotomous": 12,
+      "n_mixed": 4,
+      "n_giv": 19,
+      "n_dual_pairs": 9,
+      "n_trial_rows_emitted": 27
+    },
+    {
+      "review_id": "CD013617_pub2",
+      "n_mas_total": 26,
+      "n_continuous": 26,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013631_pub2",
+      "n_mas_total": 27,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 25,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013643_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013661_pub2",
+      "n_mas_total": 47,
+      "n_continuous": 30,
+      "n_dichotomous": 4,
+      "n_mixed": 10,
+      "n_giv": 3,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013672_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013695_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 1,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013707_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013715_pub2",
+      "n_mas_total": 23,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013719_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013726_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013729_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013731_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013733_pub3",
+      "n_mas_total": 14,
+      "n_continuous": 12,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 4,
+      "n_trial_rows_emitted": 4
+    },
+    {
+      "review_id": "CD013745_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013748_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013754_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013757_pub3",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013758_pub2",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 23,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013763_pub3",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013764_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013773_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013774_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013781_pub2",
+      "n_mas_total": 27,
+      "n_continuous": 0,
+      "n_dichotomous": 15,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013789_pub2",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 22,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013800_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 15,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013801_pub2",
+      "n_mas_total": 32,
+      "n_continuous": 13,
+      "n_dichotomous": 19,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 7,
+      "n_trial_rows_emitted": 2
+    },
+    {
+      "review_id": "CD013810_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 16,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013816_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013821_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013822_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013823_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013827_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013830_pub2",
+      "n_mas_total": 63,
+      "n_continuous": 0,
+      "n_dichotomous": 56,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013834_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013835_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013844_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013853_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013857_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013874_pub3",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD013875_pub2",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 18,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014040_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014089",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014145_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014160_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014217_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 3,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 23,
+      "n_trial_rows_emitted": 46
+    },
+    {
+      "review_id": "CD014221_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 8,
+      "n_dichotomous": 5,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 2,
+      "n_trial_rows_emitted": 3
+    },
+    {
+      "review_id": "CD014300_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014353_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 7,
+      "n_dichotomous": 5,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 9,
+      "n_trial_rows_emitted": 7
+    },
+    {
+      "review_id": "CD014428_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014497_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014532_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 7,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014541_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 28,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014544_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014544_pub3",
+      "n_mas_total": 28,
+      "n_continuous": 13,
+      "n_dichotomous": 14,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014573",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014574_pub2",
+      "n_mas_total": 33,
+      "n_continuous": 12,
+      "n_dichotomous": 19,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 59,
+      "n_trial_rows_emitted": 76
+    },
+    {
+      "review_id": "CD014580_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014585_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014594_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014617_pub3",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014623_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 4,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014624_pub2",
+      "n_mas_total": 54,
+      "n_continuous": 0,
+      "n_dichotomous": 54,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014666_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014678_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014687_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014688_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014713_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014722_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 21,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014736_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014741_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014755_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014758_pub3",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014762_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014763_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014769_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 28,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014785_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014792_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014794_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 14,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014802_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014803_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014808_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014811_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014820_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014833_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014844_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014845_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014852_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 18,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014855_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014861_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014869_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014871_pub2",
+      "n_mas_total": 66,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 66,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014872_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014889_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014891_pub2",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014914_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 3,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014920_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014923_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014932_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014935_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014937_pub2",
+      "n_mas_total": 22,
+      "n_continuous": 0,
+      "n_dichotomous": 19,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014941_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 21,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014944_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014959_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014960_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014964_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014965_pub2",
+      "n_mas_total": 59,
+      "n_continuous": 0,
+      "n_dichotomous": 33,
+      "n_mixed": 26,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014966_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014967_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD014999_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015003_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015014_pub2",
+      "n_mas_total": 48,
+      "n_continuous": 0,
+      "n_dichotomous": 37,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015022_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 1,
+      "n_dichotomous": 16,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 7,
+      "n_trial_rows_emitted": 17
+    },
+    {
+      "review_id": "CD015033_pub2",
+      "n_mas_total": 23,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015038_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015040_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015042_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015046_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015060_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015063_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 4,
+      "n_dichotomous": 17,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 5,
+      "n_trial_rows_emitted": 4
+    },
+    {
+      "review_id": "CD015064_pub2",
+      "n_mas_total": 1,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015066_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015072_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 2,
+      "n_dichotomous": 8,
+      "n_mixed": 1,
+      "n_giv": 3,
+      "n_dual_pairs": 4,
+      "n_trial_rows_emitted": 6
+    },
+    {
+      "review_id": "CD015083_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015084_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015087_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 4,
+      "n_dichotomous": 4,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 4,
+      "n_trial_rows_emitted": 1
+    },
+    {
+      "review_id": "CD015092_pub2",
+      "n_mas_total": 48,
+      "n_continuous": 25,
+      "n_dichotomous": 14,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 52,
+      "n_trial_rows_emitted": 298
+    },
+    {
+      "review_id": "CD015101",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015112_pub3",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015120_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015122_pub2",
+      "n_mas_total": 26,
+      "n_continuous": 0,
+      "n_dichotomous": 22,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015123_pub2",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015124_pub2",
+      "n_mas_total": 2,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015134_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015140_pub2",
+      "n_mas_total": 43,
+      "n_continuous": 0,
+      "n_dichotomous": 31,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015145_pub2",
+      "n_mas_total": 18,
+      "n_continuous": 14,
+      "n_dichotomous": 0,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015151_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 2,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015158_pub2",
+      "n_mas_total": 28,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 18,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015160_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015173_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 1,
+      "n_dichotomous": 18,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015176_pub2",
+      "n_mas_total": 62,
+      "n_continuous": 60,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015177_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 19,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015192_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015213_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015215_pub2",
+      "n_mas_total": 55,
+      "n_continuous": 0,
+      "n_dichotomous": 28,
+      "n_mixed": 27,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015219_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015221_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 6,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015229_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 7,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015234_pub2",
+      "n_mas_total": 305,
+      "n_continuous": 55,
+      "n_dichotomous": 244,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 4517,
+      "n_trial_rows_emitted": 757
+    },
+    {
+      "review_id": "CD015252_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015254_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015255_pub2",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015266_pub3",
+      "n_mas_total": 38,
+      "n_continuous": 0,
+      "n_dichotomous": 27,
+      "n_mixed": 0,
+      "n_giv": 11,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015284_pub2",
+      "n_mas_total": 73,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 73,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015287_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 9,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015313_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015314_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015326_pub2",
+      "n_mas_total": 78,
+      "n_continuous": 0,
+      "n_dichotomous": 78,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015328_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 9,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015330_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 9,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015331_pub2",
+      "n_mas_total": 85,
+      "n_continuous": 0,
+      "n_dichotomous": 23,
+      "n_mixed": 62,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015332_pub2",
+      "n_mas_total": 41,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 30,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015338_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 10,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015350_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015363_pub2",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 25,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015364_pub2",
+      "n_mas_total": 179,
+      "n_continuous": 0,
+      "n_dichotomous": 179,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015371_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 21,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015373_pub2",
+      "n_mas_total": 38,
+      "n_continuous": 13,
+      "n_dichotomous": 16,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 29,
+      "n_trial_rows_emitted": 28
+    },
+    {
+      "review_id": "CD015376_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 13,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015378_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 3,
+      "n_dichotomous": 3,
+      "n_mixed": 1,
+      "n_giv": 4,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015381_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015383_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015387_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 1,
+      "n_dichotomous": 13,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 8,
+      "n_trial_rows_emitted": 29
+    },
+    {
+      "review_id": "CD015395_pub3",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015432_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015436_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 9,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015443_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015448_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015462_pub2",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015464_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 7,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015470_pub2",
+      "n_mas_total": 19,
+      "n_continuous": 4,
+      "n_dichotomous": 14,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 2,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015476_pub2",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 12,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015494_pub2",
+      "n_mas_total": 5,
+      "n_continuous": 1,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 1,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015495",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 3,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015514_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015517",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015518",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 10,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015519_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015520",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 0,
+      "n_mixed": 18,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015524_pub2",
+      "n_mas_total": 36,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 35,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015526_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015530_pub2",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015532",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015536_pub2",
+      "n_mas_total": 15,
+      "n_continuous": 0,
+      "n_dichotomous": 15,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015551_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015573",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015584_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 8,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015588_pub2",
+      "n_mas_total": 56,
+      "n_continuous": 0,
+      "n_dichotomous": 50,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015592_pub3",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015594_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015610_pub2",
+      "n_mas_total": 27,
+      "n_continuous": 15,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 4,
+      "n_dual_pairs": 4,
+      "n_trial_rows_emitted": 39
+    },
+    {
+      "review_id": "CD015636_pub2",
+      "n_mas_total": 1,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015673_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015698_pub2",
+      "n_mas_total": 11,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 6,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015701_pub2",
+      "n_mas_total": 9,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015711_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 4,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015721_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015723_pub2",
+      "n_mas_total": 16,
+      "n_continuous": 6,
+      "n_dichotomous": 9,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 16,
+      "n_trial_rows_emitted": 12
+    },
+    {
+      "review_id": "CD015746_pub2",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015749_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015751_pub2",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015779",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015786_pub2",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 19,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015788_pub2",
+      "n_mas_total": 17,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015790_pub2",
+      "n_mas_total": 13,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 12,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015802_pub2",
+      "n_mas_total": 3,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015804_pub2",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 9,
+      "n_mixed": 3,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015816_pub2",
+      "n_mas_total": 18,
+      "n_continuous": 17,
+      "n_dichotomous": 0,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015820_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 6,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015824_pub2",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 17,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015830_pub2",
+      "n_mas_total": 4,
+      "n_continuous": 3,
+      "n_dichotomous": 1,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015839_pub2",
+      "n_mas_total": 7,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015849_pub2",
+      "n_mas_total": 50,
+      "n_continuous": 0,
+      "n_dichotomous": 26,
+      "n_mixed": 24,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015854",
+      "n_mas_total": 25,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 15,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015855",
+      "n_mas_total": 16,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 11,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015859_pub2",
+      "n_mas_total": 22,
+      "n_continuous": 20,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 2,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015875",
+      "n_mas_total": 40,
+      "n_continuous": 26,
+      "n_dichotomous": 0,
+      "n_mixed": 14,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015877",
+      "n_mas_total": 3,
+      "n_continuous": 3,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015894_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 1,
+      "n_mixed": 7,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD015906_pub2",
+      "n_mas_total": 81,
+      "n_continuous": 25,
+      "n_dichotomous": 34,
+      "n_mixed": 11,
+      "n_giv": 11,
+      "n_dual_pairs": 276,
+      "n_trial_rows_emitted": 133
+    },
+    {
+      "review_id": "CD015907_pub2",
+      "n_mas_total": 31,
+      "n_continuous": 12,
+      "n_dichotomous": 6,
+      "n_mixed": 13,
+      "n_giv": 0,
+      "n_dual_pairs": 13,
+      "n_trial_rows_emitted": 5
+    },
+    {
+      "review_id": "CD015932_pub2",
+      "n_mas_total": 56,
+      "n_continuous": 6,
+      "n_dichotomous": 42,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 27,
+      "n_trial_rows_emitted": 5
+    },
+    {
+      "review_id": "CD015968",
+      "n_mas_total": 20,
+      "n_continuous": 20,
+      "n_dichotomous": 0,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016001",
+      "n_mas_total": 31,
+      "n_continuous": 27,
+      "n_dichotomous": 4,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 3,
+      "n_trial_rows_emitted": 15
+    },
+    {
+      "review_id": "CD016002",
+      "n_mas_total": 47,
+      "n_continuous": 42,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 6,
+      "n_trial_rows_emitted": 24
+    },
+    {
+      "review_id": "CD016017",
+      "n_mas_total": 78,
+      "n_continuous": 33,
+      "n_dichotomous": 20,
+      "n_mixed": 25,
+      "n_giv": 0,
+      "n_dual_pairs": 123,
+      "n_trial_rows_emitted": 698
+    },
+    {
+      "review_id": "CD016018",
+      "n_mas_total": 31,
+      "n_continuous": 14,
+      "n_dichotomous": 9,
+      "n_mixed": 8,
+      "n_giv": 0,
+      "n_dual_pairs": 20,
+      "n_trial_rows_emitted": 78
+    },
+    {
+      "review_id": "CD016031",
+      "n_mas_total": 44,
+      "n_continuous": 3,
+      "n_dichotomous": 22,
+      "n_mixed": 19,
+      "n_giv": 0,
+      "n_dual_pairs": 62,
+      "n_trial_rows_emitted": 55
+    },
+    {
+      "review_id": "CD016058_pub2",
+      "n_mas_total": 8,
+      "n_continuous": 4,
+      "n_dichotomous": 2,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016058_pub3",
+      "n_mas_total": 18,
+      "n_continuous": 3,
+      "n_dichotomous": 11,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016062",
+      "n_mas_total": 66,
+      "n_continuous": 64,
+      "n_dichotomous": 0,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016063",
+      "n_mas_total": 82,
+      "n_continuous": 80,
+      "n_dichotomous": 1,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016064",
+      "n_mas_total": 31,
+      "n_continuous": 0,
+      "n_dichotomous": 31,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016119",
+      "n_mas_total": 20,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 9,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016120",
+      "n_mas_total": 23,
+      "n_continuous": 0,
+      "n_dichotomous": 7,
+      "n_mixed": 16,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016131",
+      "n_mas_total": 14,
+      "n_continuous": 0,
+      "n_dichotomous": 14,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016136",
+      "n_mas_total": 5,
+      "n_continuous": 0,
+      "n_dichotomous": 5,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016147",
+      "n_mas_total": 12,
+      "n_continuous": 0,
+      "n_dichotomous": 11,
+      "n_mixed": 1,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016148",
+      "n_mas_total": 8,
+      "n_continuous": 0,
+      "n_dichotomous": 6,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016168",
+      "n_mas_total": 21,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 5,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016194",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 0,
+      "n_giv": 4,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016211",
+      "n_mas_total": 24,
+      "n_continuous": 0,
+      "n_dichotomous": 20,
+      "n_mixed": 0,
+      "n_giv": 4,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016220_pub2",
+      "n_mas_total": 22,
+      "n_continuous": 19,
+      "n_dichotomous": 1,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 1,
+      "n_trial_rows_emitted": 3
+    },
+    {
+      "review_id": "CD016274",
+      "n_mas_total": 6,
+      "n_continuous": 0,
+      "n_dichotomous": 2,
+      "n_mixed": 4,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016278",
+      "n_mas_total": 18,
+      "n_continuous": 0,
+      "n_dichotomous": 16,
+      "n_mixed": 2,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    },
+    {
+      "review_id": "CD016347",
+      "n_mas_total": 10,
+      "n_continuous": 0,
+      "n_dichotomous": 10,
+      "n_mixed": 0,
+      "n_giv": 0,
+      "n_dual_pairs": 0,
+      "n_trial_rows_emitted": 0
+    }
+  ]
+}
