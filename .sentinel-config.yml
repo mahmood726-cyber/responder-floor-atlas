@@ -1,0 +1,28 @@
+# .sentinel-config.yml
+# Portfolio-defect top-5 rules per MEMORY.md#top-5-cross-project-defects.
+# Block levels per Sentinel docs.
+rules:
+  hardcoded_paths:
+    enabled: true
+    severity: block
+  placeholder_signatures:
+    enabled: true
+    severity: block
+  silent_failure_sentinels:
+    enabled: true
+    severity: warn
+  empty_dataframe_access:
+    enabled: true
+    severity: warn
+  js_script_tag_leak:
+    enabled: true
+    severity: block
+  xss_template_injection:
+    enabled: true
+    severity: block
+  localstorage_collision:
+    enabled: true
+    severity: warn
+  se_floor:
+    enabled: true
+    severity: warn
