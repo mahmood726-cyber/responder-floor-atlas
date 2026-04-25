@@ -733,7 +733,7 @@ def _panel_sensitivity(sens_df: pd.DataFrame | None) -> str:
             if row.empty:
                 dist_cells += "<td>&mdash;</td><td>&mdash;</td><td>&mdash;</td>"
             else:
-                r = row.iloc[0]
+                r = row.iloc[0]  # sentinel:skip-line — guarded by `if row.empty` two lines above
                 dist_cells += (
                     f"<td>{r['median_delta_p']:.4f}</td>"
                     f"<td>{r['p95_delta_p']:.4f}</td>"
