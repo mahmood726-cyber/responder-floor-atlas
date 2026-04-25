@@ -12,5 +12,67 @@
     "sf36_mcs": 3.668839612014931,
     "sf36_pcs": 6.590657164317356,
     "sf36_physical_function": 7.728364648023668
+  },
+  "q3_per_instrument_bootstrap_ci": {
+    "bmi_change": {
+      "empirical": 2.8529876763833926,
+      "canonical": 1.0,
+      "ratio": 2.8529876763833926,
+      "ratio_ci_lower": 2.6390266039360633,
+      "ratio_ci_upper": 3.8092045516497017,
+      "n_reviews": 2,
+      "n_trials": 236
+    },
+    "body_weight_kg": {
+      "empirical": 7.995458489779303,
+      "canonical": 5.0,
+      "ratio": 1.5990916979558605,
+      "ratio_ci_lower": 1.344407100011394,
+      "ratio_ci_upper": 2.2910139123783013,
+      "n_reviews": 4,
+      "n_trials": 586
+    },
+    "body_weight_pct": {
+      "empirical": 6.68115914731059,
+      "canonical": 5.0,
+      "ratio": 1.3362318294621178,
+      "ratio_ci_lower": 1.2821266155454984,
+      "ratio_ci_upper": 2.547432817522477,
+      "n_reviews": 3,
+      "n_trials": 699
+    },
+    "sf36_mcs": {
+      "empirical": 3.668839612014931,
+      "canonical": 3.0,
+      "ratio": 1.2229465373383104,
+      "ratio_ci_lower": 1.2229465373383104,
+      "ratio_ci_upper": 1.2229465373383104,
+      "n_reviews": 1,
+      "n_trials": 172
+    },
+    "sf36_pcs": {
+      "empirical": 6.590657164317356,
+      "canonical": 2.0,
+      "ratio": 3.295328582158678,
+      "ratio_ci_lower": 3.295328582158678,
+      "ratio_ci_upper": 3.295328582158678,
+      "n_reviews": 1,
+      "n_trials": 172
+    },
+    "sf36_physical_function": {
+      "empirical": 7.728364648023668,
+      "canonical": 5.0,
+      "ratio": 1.5456729296047336,
+      "ratio_ci_lower": 1.5456729296047336,
+      "ratio_ci_upper": 1.5456729296047336,
+      "n_reviews": 1,
+      "n_trials": 148
+    }
+  },
+  "q4_overlap": {
+    "total_unique_trials": 120,
+    "trials_in_multiple_reviews": 7,
+    "trials_in_single_review": 113,
+    "max_review_overlap": 2
   }
 }

@@ -35,6 +35,35 @@ def main() -> int:
         "q3_per_instrument_median_delta_hat": recon.groupby("instrument_id")["delta_hat_trial"]
             .median().dropna().to_dict() if len(recon) else {},
     }
+
+    # Bootstrap CIs from outputs/mid_bootstrap.parquet (if present)
+    try:
+        boot_df = pd.read_parquet(args.output_dir / "mid_bootstrap.parquet")
+        numbers["q3_per_instrument_bootstrap_ci"] = {
+            r["instrument_id"]: {
+                "empirical": float(r["empirical_mid"]),
+                "canonical": float(r["canonical_mid"]),
+                "ratio": float(r["ratio"]),
+                "ratio_ci_lower": float(r["ratio_ci_lower"]),
+                "ratio_ci_upper": float(r["ratio_ci_upper"]),
+                "n_reviews": int(r["n_reviews"]),
+                "n_trials": int(r["n_trials"]),
+            }
+            for _, r in boot_df.iterrows()
+        }
+    except FileNotFoundError:
+        numbers["q3_per_instrument_bootstrap_ci"] = None
+
+    # Q4 result from outputs/q4_overlap.json (if present)
+    try:
+        q4_path = args.output_dir / "q4_overlap.json"
+        if q4_path.exists():
+            numbers["q4_overlap"] = json.loads(q4_path.read_text())
+        else:
+            numbers["q4_overlap"] = None
+    except Exception:
+        numbers["q4_overlap"] = None
+
     (args.output_dir / "paper_numbers.json").write_text(json.dumps(numbers, indent=2))
 
     # analysis_audit.md — DossierGap-pattern honest enumeration.
