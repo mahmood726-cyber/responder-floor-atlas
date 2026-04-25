@@ -74,5 +74,19 @@
     "trials_in_multiple_reviews": 7,
     "trials_in_single_review": 113,
     "max_review_overlap": 2
+  },
+  "q2_normality_sensitivity": {
+    "beta_bounded": {
+      "max_p95_delta_p": 0.39868313880136075,
+      "median_p95_delta_p": 0.28990642301318825
+    },
+    "lognormal_shifted": {
+      "max_p95_delta_p": 0.04554335050419843,
+      "median_p95_delta_p": 0.04228613514761471
+    },
+    "truncated_normal": {
+      "max_p95_delta_p": 0.009817019881787958,
+      "median_p95_delta_p": 0.008921615275613227
+    }
   }
 }
