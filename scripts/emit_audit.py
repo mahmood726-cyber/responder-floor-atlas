@@ -64,6 +64,20 @@ def main() -> int:
     except Exception:
         numbers["q4_overlap"] = None
 
+    # Sensitivity bounds from outputs/sensitivity_summary.parquet (if present)
+    try:
+        sens_df = pd.read_parquet(args.output_dir / "sensitivity_summary.parquet")
+        # Aggregate to a single bound per distribution: max p95_delta_p across instruments
+        numbers["q2_normality_sensitivity"] = {
+            dist: {
+                "max_p95_delta_p": float(sens_df[sens_df["dist"] == dist]["p95_delta_p"].max()),
+                "median_p95_delta_p": float(sens_df[sens_df["dist"] == dist]["p95_delta_p"].median()),
+            }
+            for dist in sens_df["dist"].unique()
+        }
+    except FileNotFoundError:
+        numbers["q2_normality_sensitivity"] = None
+
     (args.output_dir / "paper_numbers.json").write_text(json.dumps(numbers, indent=2))
 
     # analysis_audit.md — DossierGap-pattern honest enumeration.
